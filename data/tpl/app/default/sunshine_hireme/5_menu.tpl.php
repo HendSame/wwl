@@ -1,0 +1,26 @@
+<?php defined('IN_IA') or exit('Access Denied');?><div class="weui_tabbar">
+    <a href="<?php  echo $this->createMobileUrl('index')?>" class="weui_tabbar_item">
+        <div class="weui_tabbar_icon">
+            <img src="<?php  echo $_W['siteroot'];?>addons/sunshine_hireme/common/img/icon_nav_button.png" alt="">
+        </div>
+        <p class="weui_tabbar_label">大厅</p>
+    </a>
+    <a href="<?php  echo $this->createMobileUrl('vicinity')?>" class="weui_tabbar_item">
+        <div class="weui_tabbar_icon">
+            <img src="<?php  echo $_W['siteroot'];?>addons/sunshine_hireme/common/img/icon_nav_msg.png" alt="">
+        </div>
+        <p class="weui_tabbar_label">附近</p>
+    </a>
+    <a href="<?php  echo $this->createMobileUrl('hireout')?>" class="weui_tabbar_item">
+        <div class="weui_tabbar_icon">
+            <img src="<?php  echo $_W['siteroot'];?>addons/sunshine_hireme/common/img/icon_nav_article.png" alt="">
+        </div>
+        <p class="weui_tabbar_label">发布</p>
+    </a>
+    <a href="<?php  echo $this->createMobileUrl('usercenter')?>" class="weui_tabbar_item">
+        <div class="weui_tabbar_icon">
+            <img src="<?php  echo $_W['siteroot'];?>addons/sunshine_hireme/common/img/icon_nav_cell.png" alt="">
+        </div>
+        <p class="weui_tabbar_label">我</p>
+    </a>
+</div>

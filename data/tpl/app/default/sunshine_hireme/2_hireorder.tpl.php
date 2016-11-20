@@ -1,0 +1,214 @@
+<?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('header', TEMPLATE_INCLUDEPATH)) : (include template('header', TEMPLATE_INCLUDEPATH));?>
+<?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('disclaimer', TEMPLATE_INCLUDEPATH)) : (include template('disclaimer', TEMPLATE_INCLUDEPATH));?>
+<div class="container">
+	<div class="cell">
+	<div class="bd">
+	<!-- 幻灯片 -->
+	<!-- <div class="weui_cells" style="margin:0px 0px 20px 0px">
+		<div class="weui_cell" style="position:relative;background-color:rgb(10,10,10);color:white">
+			<div class="swiper-container  gallery-top" style="width:100%;height:200px;">
+				<div class="swiper-wrapper">
+					<?php  if(is_array($record['albums'])) { foreach($record['albums'] as $item) { ?>
+					<div class="swiper-slide" style="text-align:center">
+						<img style="max-height:200px;max-width:100%" src="<?php  echo $item['img_url']?>">
+					</div>
+					<?php  } } ?>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+         <div style="padding:10px;overflow:hidden;clear:both">
+            <img src="<?php  echo $record['uinfo']['headimgurl']?>" style="height:50px;height:50px;border-radius: 5px;float:left;margin-right:5px;">
+            <div style="float:left;">
+                <div>
+                    <span style="white-space: nowrap;text-overflow:ellipsis;display:inline-block;max-width:100px;">
+                    <?php  echo $record['uinfo']['nickname']?>
+                    </span>
+                    &nbsp;
+                    <?php  if($record['uinfo']['sex'] == '1') { ?>
+                    <span class="fa fa-mars" style="color:#00BEF0"></span>
+                    <?php  } else { ?>
+                    <span class="fa fa-venus" style="color:#F00096"></span>
+                    <?php  } ?>
+                    &nbsp;
+                    <span class="fa fa-jpy"></span>
+                    <?php  echo $record['salary']?>元
+                </div>
+                <?php  $hire_range_arr = explode('，',$record['hire_range'])?>
+                <?php  if(is_array($hire_range_arr)) { foreach($hire_range_arr as $key => $range) { ?>
+                <label class="sun-label sun-label-<?php  echo $key+1?>">
+                    <?php  echo $range;?>
+                </label>
+                <?php  } } ?>
+            </div>
+        </div>
+	</div> -->
+	<!-- info begin -->
+    <div class="weui_cells_title">
+    活动范围（可多选）
+    </div>
+    <div class="weui_cells weui_cells_checkbox" id="hire_range_all">
+        <?php  $hire_range_arr = explode('，',$record['hire_range'])?>
+        <?php  if(is_array($hire_range_arr)) { foreach($hire_range_arr as $item) { ?>
+        <label class="weui_cell weui_check_label">
+            <div class="weui_cell_hd">
+                <input type="checkbox" class="weui_check" name="hire_range" value="<?php  echo $item;?>">
+                <i class="weui_icon_checked"></i>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <p><?php  echo $item;?></p>
+            </div>
+        </label>
+        <?php  } } ?>
+     </div>
+	<div class="weui_cells_title">
+    包租时长
+    </div>
+    <div class="weui_cells weui_cells_radio" id="hire_order_radio">
+        <label class="weui_cell weui_check_label" for="x11">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>1小时</p>
+            </div>
+            <div class="weui_cell_ft">
+                <input type="radio" value='1' class="weui_check" name="radio1" id="x11" checked="">
+                <span class="weui_icon_checked"></span>
+            </div>
+        </label>
+        <label class="weui_cell weui_check_label" for="x12">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>2小时</p>
+            </div>
+            <div class="weui_cell_ft">
+                <input type="radio" value='2' name="radio1" class="weui_check" id="x12">
+                <span class="weui_icon_checked"></span>
+            </div>
+        </label>
+         <label class="weui_cell weui_check_label" for="x13">
+
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>3小时</p>
+            </div>
+            <div class="weui_cell_ft">
+                <input type="radio" value='3' name="radio1" class="weui_check" id="x13">
+                <span class="weui_icon_checked"></span>
+            </div>
+        </label>
+        <label class="weui_cell weui_check_label" for="x14">
+
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>4小时</p>
+            </div>
+            <div class="weui_cell_ft">
+                <input type="radio" value='4' name="radio1" class="weui_check" id="x14">
+                <span class="weui_icon_checked"></span>
+            </div>
+        </label>
+        <label class="weui_cell weui_check_label" for="x15">
+
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>5小时</p>
+            </div>
+            <div class="weui_cell_ft">
+                <input type="radio" value='5' name="radio1" class="weui_check" id="x15">
+                <span class="weui_icon_checked"></span>
+            </div>
+        </label>
+    </div>
+    <div class="weui_cells_title">
+    计算后总租金价格
+    </div>
+    <div class="weui_cells weui_cells_form">
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+            <p id="hire_money"><?php  echo $record['salary']?></p>
+            </div>
+        </div>
+    </div>
+    <div class="weui_cells_title">
+    想对TA说的~
+    </div>
+    <div class="weui_cells weui_cells_form">
+     <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <textarea class="weui_textarea" placeholder="必填" id="hire_remark" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+	<!-- info end -->
+	</div>
+	</div>
+	<div style="height:100px;">
+	</div>
+</div>
+<div class="weui_tabbar">
+	 <a href="javascript:void(0);" onclick="doHire()" class="weui_tabbar_item weui_bar_item_on">
+        <div class="weui_tabbar_icon">
+            <img src="<?php  echo $_W['siteroot'];?>addons/sunshine_hireme/common/img/icon_nav_msg.png" alt="">
+        </div>
+        <p class="weui_tabbar_label">支付租金</p>
+    </a>
+</div>
+<?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('repeatlayer', TEMPLATE_INCLUDEPATH)) : (include template('repeatlayer', TEMPLATE_INCLUDEPATH));?>
+<?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('confirmlayer', TEMPLATE_INCLUDEPATH)) : (include template('confirmlayer', TEMPLATE_INCLUDEPATH));?>
+<form action="<?php  echo $this->createMobileUrl('hireOrderCreate')?>" method='post' id="form_submit">
+    <input type="hidden" id="hire_hour_val" name="hire_hour">
+    <input type="hidden" id="hire_money_val" name="hire_money">
+    <input type="hidden" id="hire_remark_val" name="hire_remark">
+    <input type="hidden" id="hire_range_val" name="hire_range">
+    <input type="hidden" name="rid" value="<?php  echo $record['id']?>">
+    <input type="hidden" name="token" value="<?php  echo $_W['token'];?>">
+</form>
+<link rel="stylesheet" href="<?php  echo $_W['siteroot'];?>/addons/sunshine_hireme/common/swiper/swiper-3.3.1.min.css">
+<script type="text/javascript" src="<?php  echo $_W['siteroot'];?>/addons/sunshine_hireme/common/swiper/swiper-3.3.1.min.js"></script>
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+    // 如果需要分页器
+    pagination: '.swiper-pagination'
+})
+
+// 实时计算需要支付的总价格
+$("#hire_order_radio input").on('click',function() {
+    var salary = <?php  echo $record['salary']?>;
+    var hour = $(this).val();
+    var money = hour*salary;
+
+    $("#hire_money").html(money);
+})
+
+
+function doHire() {
+    var hire_hour = $("#hire_order_radio input:checked").val();
+    var hire_range_all = [];
+    $("#hire_range_all input:checked").each(function(d,s) {
+            hire_range_all.push($(this).val());
+        })
+    var salary = <?php  echo $record['salary']?>;
+    var hire_money = hire_hour*salary;
+    var hire_remark = $("#hire_remark").val();
+
+    if(!hire_hour) {
+        alert("请选择包租时长");
+        return;
+    }
+    if(hire_range_all.length <=0) {
+        alert("请选择包租的活动范围");
+        return;
+    }
+    if(!hire_money) {
+        alert("总租金错误！");
+        return;
+    }
+    if(!hire_remark) {
+        alert("请输入想说的话");
+        return;
+    }
+
+    $("#hire_hour_val").val(hire_hour);
+    $("#hire_money_val").val(hire_money);
+    $("#hire_remark_val").val(hire_remark);
+    $("#hire_range_val").val(hire_range_all);
+
+    $("#form_submit").submit();
+}
+</script>
+<?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('footer', TEMPLATE_INCLUDEPATH)) : (include template('footer', TEMPLATE_INCLUDEPATH));?>

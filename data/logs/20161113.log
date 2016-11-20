@@ -1,0 +1,2462 @@
+2016-11-13 00:15:02 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wISzQKCz8MoVwe1r1_GL5oI]]></FromUserName>
+<CreateTime>1478967302</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 00:15:02 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wISzQKCz8MoVwe1r1_GL5oI',
+    'createtime' => '1478967302',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wISzQKCz8MoVwe1r1_GL5oI',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478967302',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 00:15:02 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wISzQKCz8MoVwe1r1_GL5oI ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 00:15:51 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wISzQKCz8MoVwe1r1_GL5oI]]></FromUserName>
+<CreateTime>1478967351</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 00:15:51 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wISzQKCz8MoVwe1r1_GL5oI',
+    'createtime' => '1478967351',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wISzQKCz8MoVwe1r1_GL5oI',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478967351',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 00:15:51 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wISzQKCz8MoVwe1r1_GL5oI ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 00:18:15 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wBLx3U-LKU5k1nB_NI-n-3M]]></FromUserName>
+<CreateTime>1478967495</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.264906</Latitude>
+<Longitude>119.715820</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 00:18:15 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wBLx3U-LKU5k1nB_NI-n-3M',
+    'createtime' => '1478967495',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.264906',
+    'longitude' => '119.715820',
+    'precision' => '40.000000',
+    'from' => 'owMq5wBLx3U-LKU5k1nB_NI-n-3M',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478967495',
+    'type' => 'trace',
+    'location_x' => '30.264906',
+    'location_y' => '119.715820',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 00:18:15 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 00:18:17 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wBLx3U-LKU5k1nB_NI-n-3M]]></FromUserName>
+<CreateTime>1478967497</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 00:18:17 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wBLx3U-LKU5k1nB_NI-n-3M',
+    'createtime' => '1478967497',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wBLx3U-LKU5k1nB_NI-n-3M',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478967497',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 00:18:17 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wBLx3U-LKU5k1nB_NI-n-3M ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 00:19:06 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wBLx3U-LKU5k1nB_NI-n-3M]]></FromUserName>
+<CreateTime>1478967546</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.264854</Latitude>
+<Longitude>119.715851</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 00:19:06 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wBLx3U-LKU5k1nB_NI-n-3M',
+    'createtime' => '1478967546',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.264854',
+    'longitude' => '119.715851',
+    'precision' => '40.000000',
+    'from' => 'owMq5wBLx3U-LKU5k1nB_NI-n-3M',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478967546',
+    'type' => 'trace',
+    'location_x' => '30.264854',
+    'location_y' => '119.715851',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 00:19:06 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 00:25:01 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wCDUm5qaOzwo5rfu6osNWzs]]></FromUserName>
+<CreateTime>1478967901</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=hireout&m=sunshine_hireme]]></EventKey>
+<MenuId>408183568</MenuId>
+</xml>
+
+2016-11-13 00:25:01 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wCDUm5qaOzwo5rfu6osNWzs',
+    'createtime' => '1478967901',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=hireout&m=sunshine_hireme',
+    'menuid' => '408183568',
+    'from' => 'owMq5wCDUm5qaOzwo5rfu6osNWzs',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478967901',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=hireout&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 00:25:01 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wCDUm5qaOzwo5rfu6osNWzs ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 00:25:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wCDUm5qaOzwo5rfu6osNWzs]]></FromUserName>
+<CreateTime>1478967904</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408183568</MenuId>
+</xml>
+
+2016-11-13 00:25:04 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wCDUm5qaOzwo5rfu6osNWzs',
+    'createtime' => '1478967904',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408183568',
+    'from' => 'owMq5wCDUm5qaOzwo5rfu6osNWzs',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478967904',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 00:25:04 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wCDUm5qaOzwo5rfu6osNWzs ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 02:08:23 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wO8WetQCU_HfeB3ZNPF8Ut0]]></FromUserName>
+<CreateTime>1478974103</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.240763</Latitude>
+<Longitude>119.726547</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 02:08:23 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wO8WetQCU_HfeB3ZNPF8Ut0',
+    'createtime' => '1478974103',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.240763',
+    'longitude' => '119.726547',
+    'precision' => '40.000000',
+    'from' => 'owMq5wO8WetQCU_HfeB3ZNPF8Ut0',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478974103',
+    'type' => 'trace',
+    'location_x' => '30.240763',
+    'location_y' => '119.726547',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 02:08:23 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 02:08:34 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wO8WetQCU_HfeB3ZNPF8Ut0]]></FromUserName>
+<CreateTime>1478974114</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.240763</Latitude>
+<Longitude>119.726547</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 02:08:34 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wO8WetQCU_HfeB3ZNPF8Ut0',
+    'createtime' => '1478974114',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.240763',
+    'longitude' => '119.726547',
+    'precision' => '40.000000',
+    'from' => 'owMq5wO8WetQCU_HfeB3ZNPF8Ut0',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478974114',
+    'type' => 'trace',
+    'location_x' => '30.240763',
+    'location_y' => '119.726547',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 02:08:34 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 02:08:36 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wO8WetQCU_HfeB3ZNPF8Ut0]]></FromUserName>
+<CreateTime>1478974116</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 02:08:36 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wO8WetQCU_HfeB3ZNPF8Ut0',
+    'createtime' => '1478974116',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wO8WetQCU_HfeB3ZNPF8Ut0',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478974116',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 02:08:36 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wO8WetQCU_HfeB3ZNPF8Ut0 ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 02:09:54 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wO8WetQCU_HfeB3ZNPF8Ut0]]></FromUserName>
+<CreateTime>1478974194</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.240904</Latitude>
+<Longitude>119.726463</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 02:09:54 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wO8WetQCU_HfeB3ZNPF8Ut0',
+    'createtime' => '1478974194',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.240904',
+    'longitude' => '119.726463',
+    'precision' => '40.000000',
+    'from' => 'owMq5wO8WetQCU_HfeB3ZNPF8Ut0',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478974194',
+    'type' => 'trace',
+    'location_x' => '30.240904',
+    'location_y' => '119.726463',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 02:09:54 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 08:20:38 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wAbeJAL1Vfs9ERONydVjGq4]]></FromUserName>
+<CreateTime>1478996438</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-11-13 08:54:16 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wGa3ECYotqWqIQXH0M6stcw]]></FromUserName>
+<CreateTime>1478998455</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.264231</Latitude>
+<Longitude>119.717140</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 08:54:16 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wGa3ECYotqWqIQXH0M6stcw',
+    'createtime' => '1478998455',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.264231',
+    'longitude' => '119.717140',
+    'precision' => '40.000000',
+    'from' => 'owMq5wGa3ECYotqWqIQXH0M6stcw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478998455',
+    'type' => 'trace',
+    'location_x' => '30.264231',
+    'location_y' => '119.717140',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 08:54:16 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 08:54:37 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wGa3ECYotqWqIQXH0M6stcw]]></FromUserName>
+<CreateTime>1478998477</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.264231</Latitude>
+<Longitude>119.717140</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 08:54:37 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wGa3ECYotqWqIQXH0M6stcw',
+    'createtime' => '1478998477',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.264231',
+    'longitude' => '119.717140',
+    'precision' => '40.000000',
+    'from' => 'owMq5wGa3ECYotqWqIQXH0M6stcw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478998477',
+    'type' => 'trace',
+    'location_x' => '30.264231',
+    'location_y' => '119.717140',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 08:54:37 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 08:54:53 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wGa3ECYotqWqIQXH0M6stcw]]></FromUserName>
+<CreateTime>1478998492</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.264088</Latitude>
+<Longitude>119.717278</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 08:54:53 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wGa3ECYotqWqIQXH0M6stcw',
+    'createtime' => '1478998492',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.264088',
+    'longitude' => '119.717278',
+    'precision' => '40.000000',
+    'from' => 'owMq5wGa3ECYotqWqIQXH0M6stcw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1478998492',
+    'type' => 'trace',
+    'location_x' => '30.264088',
+    'location_y' => '119.717278',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 08:54:53 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 10:04:52 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wA3cncdqNG23YxxHIAfpWhs]]></FromUserName>
+<CreateTime>1479002692</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.264463</Latitude>
+<Longitude>119.716263</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 10:04:52 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wA3cncdqNG23YxxHIAfpWhs',
+    'createtime' => '1479002692',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.264463',
+    'longitude' => '119.716263',
+    'precision' => '40.000000',
+    'from' => 'owMq5wA3cncdqNG23YxxHIAfpWhs',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479002692',
+    'type' => 'trace',
+    'location_x' => '30.264463',
+    'location_y' => '119.716263',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 10:04:52 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 10:04:54 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wA3cncdqNG23YxxHIAfpWhs]]></FromUserName>
+<CreateTime>1479002693</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 10:04:54 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wA3cncdqNG23YxxHIAfpWhs',
+    'createtime' => '1479002693',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wA3cncdqNG23YxxHIAfpWhs',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479002693',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 10:04:54 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wA3cncdqNG23YxxHIAfpWhs ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 10:06:21 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wA3cncdqNG23YxxHIAfpWhs]]></FromUserName>
+<CreateTime>1479002781</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.264502</Latitude>
+<Longitude>119.716225</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 10:06:21 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wA3cncdqNG23YxxHIAfpWhs',
+    'createtime' => '1479002781',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.264502',
+    'longitude' => '119.716225',
+    'precision' => '40.000000',
+    'from' => 'owMq5wA3cncdqNG23YxxHIAfpWhs',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479002781',
+    'type' => 'trace',
+    'location_x' => '30.264502',
+    'location_y' => '119.716225',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 10:06:21 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 10:18:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wPPmNVY0Hu5rHRd9_vb8eEE]]></FromUserName>
+<CreateTime>1479003489</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.314417</Latitude>
+<Longitude>119.443092</Longitude>
+<Precision>460.000000</Precision>
+</xml>
+
+2016-11-13 10:18:09 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wPPmNVY0Hu5rHRd9_vb8eEE',
+    'createtime' => '1479003489',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.314417',
+    'longitude' => '119.443092',
+    'precision' => '460.000000',
+    'from' => 'owMq5wPPmNVY0Hu5rHRd9_vb8eEE',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479003489',
+    'type' => 'trace',
+    'location_x' => '30.314417',
+    'location_y' => '119.443092',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 10:18:09 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 10:43:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wBSLsRLvWCTQO9y0otjXu_s]]></FromUserName>
+<CreateTime>1479005027</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 10:43:47 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wBSLsRLvWCTQO9y0otjXu_s',
+    'createtime' => '1479005027',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wBSLsRLvWCTQO9y0otjXu_s',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479005027',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 10:43:47 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wBSLsRLvWCTQO9y0otjXu_s ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 10:44:24 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wBSLsRLvWCTQO9y0otjXu_s]]></FromUserName>
+<CreateTime>1479005064</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 10:44:24 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wBSLsRLvWCTQO9y0otjXu_s',
+    'createtime' => '1479005064',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wBSLsRLvWCTQO9y0otjXu_s',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479005064',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 10:44:24 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wBSLsRLvWCTQO9y0otjXu_s ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 14:50:30 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wMfD_H3tdbG853-nD4fluxM]]></FromUserName>
+<CreateTime>1479019829</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 14:50:30 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wMfD_H3tdbG853-nD4fluxM',
+    'createtime' => '1479019829',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wMfD_H3tdbG853-nD4fluxM',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479019829',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 14:50:30 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wMfD_H3tdbG853-nD4fluxM ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 15:13:25 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wHWj0K3-KPWf0tr5rYaEYFw]]></FromUserName>
+<CreateTime>1479021205</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://4dce36b7c273.ih5.cn/idea/KAGNX4b]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 15:13:25 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'createtime' => '1479021205',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://4dce36b7c273.ih5.cn/idea/KAGNX4b',
+    'menuid' => '408217465',
+    'from' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479021205',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://4dce36b7c273.ih5.cn/idea/KAGNX4b',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 15:13:25 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wHWj0K3-KPWf0tr5rYaEYFw ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 19:12:34 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wIRMN0xPspT6fqn95onOAy8]]></FromUserName>
+<CreateTime>1479035553</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.263041</Latitude>
+<Longitude>119.716736</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 19:12:34 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wIRMN0xPspT6fqn95onOAy8',
+    'createtime' => '1479035553',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.263041',
+    'longitude' => '119.716736',
+    'precision' => '40.000000',
+    'from' => 'owMq5wIRMN0xPspT6fqn95onOAy8',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479035553',
+    'type' => 'trace',
+    'location_x' => '30.263041',
+    'location_y' => '119.716736',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 19:12:34 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 19:18:25 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wOAmvHRWqqhN1BRIWdXglMo]]></FromUserName>
+<CreateTime>1479035904</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.260345</Latitude>
+<Longitude>119.723526</Longitude>
+<Precision>430.000000</Precision>
+</xml>
+
+2016-11-13 19:18:25 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wOAmvHRWqqhN1BRIWdXglMo',
+    'createtime' => '1479035904',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.260345',
+    'longitude' => '119.723526',
+    'precision' => '430.000000',
+    'from' => 'owMq5wOAmvHRWqqhN1BRIWdXglMo',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479035904',
+    'type' => 'trace',
+    'location_x' => '30.260345',
+    'location_y' => '119.723526',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 19:18:25 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 19:36:51 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wGsHYE4TALKvvKxG6Qc2bRk]]></FromUserName>
+<CreateTime>1479037011</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 19:36:51 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wGsHYE4TALKvvKxG6Qc2bRk',
+    'createtime' => '1479037011',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wGsHYE4TALKvvKxG6Qc2bRk',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479037011',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 19:36:51 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wGsHYE4TALKvvKxG6Qc2bRk ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 20:10:21 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wJ9CL9zQRYxtEpFRGIkhliw]]></FromUserName>
+<CreateTime>1479039020</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-11-13 20:10:21 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wJ9CL9zQRYxtEpFRGIkhliw',
+    'createtime' => '1479039020',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'owMq5wJ9CL9zQRYxtEpFRGIkhliw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479039020',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'default',
+    'content' => '单身狗',
+    'original' => '11双十一',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 20:10:21 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wJ9CL9zQRYxtEpFRGIkhliw ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 20:10:32 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wJ9CL9zQRYxtEpFRGIkhliw]]></FromUserName>
+<CreateTime>1479039031</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 20:10:32 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wJ9CL9zQRYxtEpFRGIkhliw',
+    'createtime' => '1479039031',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wJ9CL9zQRYxtEpFRGIkhliw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479039031',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 20:10:32 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wJ9CL9zQRYxtEpFRGIkhliw ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 20:10:37 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wJ9CL9zQRYxtEpFRGIkhliw]]></FromUserName>
+<CreateTime>1479039036</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://4dce36b7c273.ih5.cn/idea/KAGNX4b]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 20:10:37 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wJ9CL9zQRYxtEpFRGIkhliw',
+    'createtime' => '1479039036',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://4dce36b7c273.ih5.cn/idea/KAGNX4b',
+    'menuid' => '408217465',
+    'from' => 'owMq5wJ9CL9zQRYxtEpFRGIkhliw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479039036',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://4dce36b7c273.ih5.cn/idea/KAGNX4b',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 20:10:37 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wJ9CL9zQRYxtEpFRGIkhliw ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 20:10:38 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wJ9CL9zQRYxtEpFRGIkhliw]]></FromUserName>
+<CreateTime>1479039038</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=usercenter&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 20:10:38 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wJ9CL9zQRYxtEpFRGIkhliw',
+    'createtime' => '1479039038',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=usercenter&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wJ9CL9zQRYxtEpFRGIkhliw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479039038',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=usercenter&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 20:10:38 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wJ9CL9zQRYxtEpFRGIkhliw ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 20:26:11 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wPN-lYSNNMtOGdk6VkkSUBk]]></FromUserName>
+<CreateTime>1479039970</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-11-13 20:44:25 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wFmkFVVQIM-VOPue0wVIIKU]]></FromUserName>
+<CreateTime>1479041065</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-11-13 21:51:00 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wG4MlTUyw8ycGhuzscPIz00]]></FromUserName>
+<CreateTime>1479045059</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-11-13 21:51:00 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wG4MlTUyw8ycGhuzscPIz00',
+    'createtime' => '1479045059',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'owMq5wG4MlTUyw8ycGhuzscPIz00',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479045059',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'default',
+    'content' => '单身狗',
+    'original' => '11双十一',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 21:51:00 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wG4MlTUyw8ycGhuzscPIz00 ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 21:51:05 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wG4MlTUyw8ycGhuzscPIz00]]></FromUserName>
+<CreateTime>1479045065</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.241270</Latitude>
+<Longitude>119.722923</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 21:51:05 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wG4MlTUyw8ycGhuzscPIz00',
+    'createtime' => '1479045065',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.241270',
+    'longitude' => '119.722923',
+    'precision' => '40.000000',
+    'from' => 'owMq5wG4MlTUyw8ycGhuzscPIz00',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479045065',
+    'type' => 'trace',
+    'location_x' => '30.241270',
+    'location_y' => '119.722923',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 21:51:05 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 22:25:37 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wFfkbacRCgA5ZBxlP5O8JNc]]></FromUserName>
+<CreateTime>1479047136</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-11-13 22:25:37 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'createtime' => '1479047136',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479047136',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'default',
+    'content' => '单身狗',
+    'original' => '11双十一',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 22:25:37 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wFfkbacRCgA5ZBxlP5O8JNc ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 22:25:40 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wFfkbacRCgA5ZBxlP5O8JNc]]></FromUserName>
+<CreateTime>1479047139</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.263914</Latitude>
+<Longitude>119.716820</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 22:25:40 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'createtime' => '1479047139',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.263914',
+    'longitude' => '119.716820',
+    'precision' => '40.000000',
+    'from' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479047139',
+    'type' => 'trace',
+    'location_x' => '30.263914',
+    'location_y' => '119.716820',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 22:25:40 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 22:28:17 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wFfkbacRCgA5ZBxlP5O8JNc]]></FromUserName>
+<CreateTime>1479047297</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.263845</Latitude>
+<Longitude>119.716805</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 22:28:17 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'createtime' => '1479047297',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.263845',
+    'longitude' => '119.716805',
+    'precision' => '40.000000',
+    'from' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479047297',
+    'type' => 'trace',
+    'location_x' => '30.263845',
+    'location_y' => '119.716805',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 22:28:17 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 22:28:41 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wFfkbacRCgA5ZBxlP5O8JNc]]></FromUserName>
+<CreateTime>1479047321</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.263845</Latitude>
+<Longitude>119.716805</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 22:28:41 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'createtime' => '1479047321',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.263845',
+    'longitude' => '119.716805',
+    'precision' => '40.000000',
+    'from' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479047321',
+    'type' => 'trace',
+    'location_x' => '30.263845',
+    'location_y' => '119.716805',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 22:28:41 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 22:29:01 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wFfkbacRCgA5ZBxlP5O8JNc]]></FromUserName>
+<CreateTime>1479047341</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.264034</Latitude>
+<Longitude>119.716904</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 22:29:01 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'createtime' => '1479047341',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.264034',
+    'longitude' => '119.716904',
+    'precision' => '40.000000',
+    'from' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479047341',
+    'type' => 'trace',
+    'location_x' => '30.264034',
+    'location_y' => '119.716904',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 22:29:01 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 22:29:12 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wFfkbacRCgA5ZBxlP5O8JNc]]></FromUserName>
+<CreateTime>1479047352</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.264071</Latitude>
+<Longitude>119.716934</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 22:29:12 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'createtime' => '1479047352',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.264071',
+    'longitude' => '119.716934',
+    'precision' => '40.000000',
+    'from' => 'owMq5wFfkbacRCgA5ZBxlP5O8JNc',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479047352',
+    'type' => 'trace',
+    'location_x' => '30.264071',
+    'location_y' => '119.716934',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 22:29:12 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 22:31:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wEQXvur5_8eyxKHu-AXOcHU]]></FromUserName>
+<CreateTime>1479047468</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>36.042137</Latitude>
+<Longitude>103.878777</Longitude>
+<Precision>65.000000</Precision>
+</xml>
+
+2016-11-13 22:31:09 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wEQXvur5_8eyxKHu-AXOcHU',
+    'createtime' => '1479047468',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '36.042137',
+    'longitude' => '103.878777',
+    'precision' => '65.000000',
+    'from' => 'owMq5wEQXvur5_8eyxKHu-AXOcHU',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479047468',
+    'type' => 'trace',
+    'location_x' => '36.042137',
+    'location_y' => '103.878777',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 22:31:09 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 23:45:51 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wN5MzO7ShpmA70iC8cWaM1Q]]></FromUserName>
+<CreateTime>1479051950</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.263056</Latitude>
+<Longitude>119.720833</Longitude>
+<Precision>60.000000</Precision>
+</xml>
+
+2016-11-13 23:45:51 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'createtime' => '1479051950',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.263056',
+    'longitude' => '119.720833',
+    'precision' => '60.000000',
+    'from' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479051950',
+    'type' => 'trace',
+    'location_x' => '30.263056',
+    'location_y' => '119.720833',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 23:45:51 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 23:45:59 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wN5MzO7ShpmA70iC8cWaM1Q]]></FromUserName>
+<CreateTime>1479051959</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.263056</Latitude>
+<Longitude>119.720833</Longitude>
+<Precision>60.000000</Precision>
+</xml>
+
+2016-11-13 23:45:59 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'createtime' => '1479051959',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.263056',
+    'longitude' => '119.720833',
+    'precision' => '60.000000',
+    'from' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479051959',
+    'type' => 'trace',
+    'location_x' => '30.263056',
+    'location_y' => '119.720833',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 23:45:59 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 23:46:07 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wN5MzO7ShpmA70iC8cWaM1Q]]></FromUserName>
+<CreateTime>1479051966</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.262983</Latitude>
+<Longitude>119.720886</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 23:46:07 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'createtime' => '1479051966',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.262983',
+    'longitude' => '119.720886',
+    'precision' => '40.000000',
+    'from' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479051966',
+    'type' => 'trace',
+    'location_x' => '30.262983',
+    'location_y' => '119.720886',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 23:46:07 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 23:46:30 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wN5MzO7ShpmA70iC8cWaM1Q]]></FromUserName>
+<CreateTime>1479051989</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.263103</Latitude>
+<Longitude>119.720871</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 23:46:30 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'createtime' => '1479051989',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.263103',
+    'longitude' => '119.720871',
+    'precision' => '40.000000',
+    'from' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479051989',
+    'type' => 'trace',
+    'location_x' => '30.263103',
+    'location_y' => '119.720871',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 23:46:30 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 23:46:43 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wN5MzO7ShpmA70iC8cWaM1Q]]></FromUserName>
+<CreateTime>1479052002</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.263151</Latitude>
+<Longitude>119.720924</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 23:46:43 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'createtime' => '1479052002',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.263151',
+    'longitude' => '119.720924',
+    'precision' => '40.000000',
+    'from' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479052002',
+    'type' => 'trace',
+    'location_x' => '30.263151',
+    'location_y' => '119.720924',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 23:46:43 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 23:47:05 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wN5MzO7ShpmA70iC8cWaM1Q]]></FromUserName>
+<CreateTime>1479052024</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.263077</Latitude>
+<Longitude>119.720940</Longitude>
+<Precision>40.000000</Precision>
+</xml>
+
+2016-11-13 23:47:05 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'createtime' => '1479052024',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.263077',
+    'longitude' => '119.720940',
+    'precision' => '40.000000',
+    'from' => 'owMq5wN5MzO7ShpmA70iC8cWaM1Q',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479052024',
+    'type' => 'trace',
+    'location_x' => '30.263077',
+    'location_y' => '119.720940',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-11-13 23:47:05 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-11-13 23:47:12 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wN5MzO7ShpmA70iC8cWaM1Q]]></FromUserName>
+<CreateTime>1479052031</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-11-13 23:47:34 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wOa6n-CrRaNAA6UkkITLAGw]]></FromUserName>
+<CreateTime>1479052053</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=usercenter&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 23:47:34 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wOa6n-CrRaNAA6UkkITLAGw',
+    'createtime' => '1479052053',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=usercenter&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wOa6n-CrRaNAA6UkkITLAGw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479052053',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=usercenter&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 23:47:34 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wOa6n-CrRaNAA6UkkITLAGw ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+
+2016-11-13 23:47:52 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wOa6n-CrRaNAA6UkkITLAGw]]></FromUserName>
+<CreateTime>1479052071</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408217465</MenuId>
+</xml>
+
+2016-11-13 23:47:52 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wOa6n-CrRaNAA6UkkITLAGw',
+    'createtime' => '1479052071',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408217465',
+    'from' => 'owMq5wOa6n-CrRaNAA6UkkITLAGw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1479052071',
+    'type' => 'text',
+    'content' => '单身狗',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '15',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '33',
+    'rid' => '15',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '单身狗',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-13 23:47:52 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wOa6n-CrRaNAA6UkkITLAGw ;
+MsgType : text ;
+Content : 测测你的颜值值多少钱？
+
+生成你的光棍节专属海报
+戳此链接
+http://4dce36b7c273.ih5.cn/idea/KAGNX4b
+
+这个神奇的网站已让上万条单身狗脱单啦！  在这里，你可以租个人陪你吃饭，看电影，压马路，也更欢迎你出租自己哦！ ;
+

@@ -1,0 +1,248 @@
+2016-11-01 08:14:32 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wHWj0K3-KPWf0tr5rYaEYFw]]></FromUserName>
+<CreateTime>1477959272</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408084710</MenuId>
+</xml>
+
+2016-11-01 08:14:32 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'createtime' => '1477959272',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408084710',
+    'from' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477959272',
+    'type' => 'text',
+    'content' => '关注回复',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '21',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '关注回复',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-01 08:14:32 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wHWj0K3-KPWf0tr5rYaEYFw ;
+MsgType : text ;
+Content : ☀【简玩文化】☀专注年轻人，营造安全、健康的社区交友文化，在这里，你可以租一个人聊天、看电影、租跑步、租兼职、租个学霸给你补课，甚至谈恋爱哦！
+
+与此同时，你也可以出租自己，还能赚取一笔小费，当然,价格自然是由你来定。
+
+——马上开始，进入个人中心，填写您的个人信息。/微笑 ;
+
+2016-11-01 17:43:42 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wMBeNntNK7kVrENU_NtuW1U]]></FromUserName>
+<CreateTime>1477993421</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408084710</MenuId>
+</xml>
+
+2016-11-01 17:43:42 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'createtime' => '1477993421',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408084710',
+    'from' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477993421',
+    'type' => 'text',
+    'content' => '关注回复',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '21',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '关注回复',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-01 17:43:42 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wMBeNntNK7kVrENU_NtuW1U ;
+MsgType : text ;
+Content : ☀【简玩文化】☀专注年轻人，营造安全、健康的社区交友文化，在这里，你可以租一个人聊天、看电影、租跑步、租兼职、租个学霸给你补课，甚至谈恋爱哦！
+
+与此同时，你也可以出租自己，还能赚取一笔小费，当然,价格自然是由你来定。
+
+——马上开始，进入个人中心，填写您的个人信息。/微笑 ;
+
+2016-11-01 17:44:48 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wMBeNntNK7kVrENU_NtuW1U]]></FromUserName>
+<CreateTime>1477993477</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408084710</MenuId>
+</xml>
+
+2016-11-01 17:44:48 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'createtime' => '1477993477',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408084710',
+    'from' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477993477',
+    'type' => 'text',
+    'content' => '关注回复',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '21',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '关注回复',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-01 17:44:48 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wMBeNntNK7kVrENU_NtuW1U ;
+MsgType : text ;
+Content : ☀【简玩文化】☀专注年轻人，营造安全、健康的社区交友文化，在这里，你可以租一个人聊天、看电影、租跑步、租兼职、租个学霸给你补课，甚至谈恋爱哦！
+
+与此同时，你也可以出租自己，还能赚取一笔小费，当然,价格自然是由你来定。
+
+——马上开始，进入个人中心，填写您的个人信息。/微笑 ;
+
+2016-11-01 18:51:45 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wHWj0K3-KPWf0tr5rYaEYFw]]></FromUserName>
+<CreateTime>1477997504</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme]]></EventKey>
+<MenuId>408084710</MenuId>
+</xml>
+
+2016-11-01 18:51:45 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'createtime' => '1477997504',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+    'menuid' => '408084710',
+    'from' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477997504',
+    'type' => 'text',
+    'content' => '关注回复',
+    'redirection' => true,
+    'source' => 'default',
+    'original' => 'http://jwschool.cn/app/index.php?i=2&c=entry&do=index&m=sunshine_hireme',
+  ),
+  'module' => 'basic',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '21',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'basic',
+    'content' => '关注回复',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-11-01 18:51:45 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wHWj0K3-KPWf0tr5rYaEYFw ;
+MsgType : text ;
+Content : ☀【简玩文化】☀专注年轻人，营造安全、健康的社区交友文化，在这里，你可以租一个人聊天、看电影、租跑步、租兼职、租个学霸给你补课，甚至谈恋爱哦！
+
+与此同时，你也可以出租自己，还能赚取一笔小费，当然,价格自然是由你来定。
+
+——马上开始，进入个人中心，填写您的个人信息。/微笑 ;
+

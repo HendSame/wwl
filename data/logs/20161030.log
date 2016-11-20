@@ -1,0 +1,542 @@
+2016-10-30 22:32:55 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wMBeNntNK7kVrENU_NtuW1U]]></FromUserName>
+<CreateTime>1477837975</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[租人]]></Content>
+<MsgId>6347265771819949694</MsgId>
+</xml>
+
+2016-10-30 22:32:55 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'createtime' => '1477837975',
+    'msgtype' => 'text',
+    'content' => '租人',
+    'msgid' => '6347265771819949694',
+    'from' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477837975',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '租人',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-10-30 22:32:55 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wMBeNntNK7kVrENU_NtuW1U ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-10-30 22:36:52 sunshine_hireme_SmsComponent :
+------------
+String:
+SimpleXMLElement::__set_state(array(
+   'result' => 
+  SimpleXMLElement::__set_state(array(
+     'err_code' => '0',
+     'model' => '104345245151^1105888135427',
+     'success' => 'true',
+  )),
+   'request_id' => '11ieglr6rak26',
+))
+
+2016-10-30 22:58:14 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wMBeNntNK7kVrENU_NtuW1U]]></FromUserName>
+<CreateTime>1477839493</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.256573</Latitude>
+<Longitude>119.718224</Longitude>
+<Precision>65.000000</Precision>
+</xml>
+
+2016-10-30 22:58:14 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'createtime' => '1477839493',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.256573',
+    'longitude' => '119.718224',
+    'precision' => '65.000000',
+    'from' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477839493',
+    'type' => 'trace',
+    'location_x' => '30.256573',
+    'location_y' => '119.718224',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-10-30 22:58:14 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-10-30 22:59:20 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wHWj0K3-KPWf0tr5rYaEYFw]]></FromUserName>
+<CreateTime>1477839560</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.256699</Latitude>
+<Longitude>119.718147</Longitude>
+<Precision>65.000000</Precision>
+</xml>
+
+2016-10-30 22:59:20 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'createtime' => '1477839560',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.256699',
+    'longitude' => '119.718147',
+    'precision' => '65.000000',
+    'from' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477839560',
+    'type' => 'trace',
+    'location_x' => '30.256699',
+    'location_y' => '119.718147',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-10-30 22:59:20 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-10-30 22:59:25 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wHWj0K3-KPWf0tr5rYaEYFw]]></FromUserName>
+<CreateTime>1477839564</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[租人]]></Content>
+<MsgId>6347272596522983218</MsgId>
+</xml>
+
+2016-10-30 22:59:25 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'createtime' => '1477839564',
+    'msgtype' => 'text',
+    'content' => '租人',
+    'msgid' => '6347272596522983218',
+    'from' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477839564',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '租人',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-10-30 22:59:25 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wHWj0K3-KPWf0tr5rYaEYFw ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-10-30 22:59:41 sunshine_hireme_SmsComponent :
+------------
+String:
+SimpleXMLElement::__set_state(array(
+   'result' => 
+  SimpleXMLElement::__set_state(array(
+     'err_code' => '0',
+     'model' => '104345275344^1105888165487',
+     'success' => 'true',
+  )),
+   'request_id' => '11ifewhe7ahlz',
+))
+
+2016-10-30 23:01:34 pay :
+------------
+String:
+array (
+  'appid' => 'wx0826dcd5d961013c',
+  'attach' => '2',
+  'bank_type' => 'CCB_DEBIT',
+  'cash_fee' => '2500',
+  'fee_type' => 'CNY',
+  'is_subscribe' => 'Y',
+  'mch_id' => '1349301601',
+  'nonce_str' => 'QaU19jF9',
+  'openid' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+  'out_trade_no' => '2016103023012700001664880485',
+  'result_code' => 'SUCCESS',
+  'return_code' => 'SUCCESS',
+  'sign' => 'D4C07EC462183C018D48F527731499E5',
+  'time_end' => '20161030230133',
+  'total_fee' => '2500',
+  'trade_type' => 'JSAPI',
+  'transaction_id' => '4003692001201610308212427252',
+)
+
+2016-10-30 23:01:48 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wHWj0K3-KPWf0tr5rYaEYFw]]></FromUserName>
+<CreateTime>1477839707</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.256624</Latitude>
+<Longitude>119.718132</Longitude>
+<Precision>65.000000</Precision>
+</xml>
+
+2016-10-30 23:01:48 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'createtime' => '1477839707',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.256624',
+    'longitude' => '119.718132',
+    'precision' => '65.000000',
+    'from' => 'owMq5wHWj0K3-KPWf0tr5rYaEYFw',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477839707',
+    'type' => 'trace',
+    'location_x' => '30.256624',
+    'location_y' => '119.718132',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-10-30 23:01:48 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-10-30 23:02:10 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wMBeNntNK7kVrENU_NtuW1U]]></FromUserName>
+<CreateTime>1477839729</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.256624</Latitude>
+<Longitude>119.718132</Longitude>
+<Precision>65.000000</Precision>
+</xml>
+
+2016-10-30 23:02:10 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'createtime' => '1477839729',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.256624',
+    'longitude' => '119.718132',
+    'precision' => '65.000000',
+    'from' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477839729',
+    'type' => 'trace',
+    'location_x' => '30.256624',
+    'location_y' => '119.718132',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-10-30 23:02:10 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2016-10-30 23:05:55 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wHKOXy04BoeMnokLkiJSsgQ]]></FromUserName>
+<CreateTime>1477839954</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[租人]]></Content>
+<MsgId>6347274271560228730</MsgId>
+</xml>
+
+2016-10-30 23:05:55 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wHKOXy04BoeMnokLkiJSsgQ',
+    'createtime' => '1477839954',
+    'msgtype' => 'text',
+    'content' => '租人',
+    'msgid' => '6347274271560228730',
+    'from' => 'owMq5wHKOXy04BoeMnokLkiJSsgQ',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477839954',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '租人',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-10-30 23:05:55 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wHKOXy04BoeMnokLkiJSsgQ ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-10-30 23:06:21 sunshine_hireme_SmsComponent :
+------------
+String:
+SimpleXMLElement::__set_state(array(
+   'result' => 
+  SimpleXMLElement::__set_state(array(
+     'err_code' => '0',
+     'model' => '104345187729^1105888062893',
+     'success' => 'true',
+  )),
+   'request_id' => '46h6ulua9aaa',
+))
+
+2016-10-30 23:13:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wBCeUuJzMtdqsmREdl-nFDU]]></FromUserName>
+<CreateTime>1477840388</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[租人]]></Content>
+<MsgId>6347276135576035274</MsgId>
+</xml>
+
+2016-10-30 23:13:09 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wBCeUuJzMtdqsmREdl-nFDU',
+    'createtime' => '1477840388',
+    'msgtype' => 'text',
+    'content' => '租人',
+    'msgid' => '6347276135576035274',
+    'from' => 'owMq5wBCeUuJzMtdqsmREdl-nFDU',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477840388',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '租人',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2016-10-30 23:13:09 response :
+------------
+Array:
+FromUserName : gh_d08df8dd58c3 ;
+ToUserName : owMq5wBCeUuJzMtdqsmREdl-nFDU ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-10-30 23:13:41 sunshine_hireme_SmsComponent :
+------------
+String:
+SimpleXMLElement::__set_state(array(
+   'result' => 
+  SimpleXMLElement::__set_state(array(
+     'err_code' => '0',
+     'model' => '104345285553^1105888190500',
+     'success' => 'true',
+  )),
+   'request_id' => 'elorycxp7r26',
+))
+
+2016-10-30 23:16:43 pay :
+------------
+String:
+array (
+  'appid' => 'wx0826dcd5d961013c',
+  'attach' => '2',
+  'bank_type' => 'CCB_DEBIT',
+  'cash_fee' => '2500',
+  'fee_type' => 'CNY',
+  'is_subscribe' => 'Y',
+  'mch_id' => '1349301601',
+  'nonce_str' => 'Z2DNzf22',
+  'openid' => 'owMq5wBCeUuJzMtdqsmREdl-nFDU',
+  'out_trade_no' => '2016103023162400001628638955',
+  'result_code' => 'SUCCESS',
+  'return_code' => 'SUCCESS',
+  'sign' => '55A934066C2E8E90DCDF24AC0F002FB6',
+  'time_end' => '20161030231642',
+  'total_fee' => '2500',
+  'trade_type' => 'JSAPI',
+  'transaction_id' => '4002812001201610308212064803',
+)
+
+2016-10-30 23:27:43 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_d08df8dd58c3]]></ToUserName>
+<FromUserName><![CDATA[owMq5wMBeNntNK7kVrENU_NtuW1U]]></FromUserName>
+<CreateTime>1477841262</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>30.256605</Latitude>
+<Longitude>119.718040</Longitude>
+<Precision>65.000000</Precision>
+</xml>
+
+2016-10-30 23:27:43 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_d08df8dd58c3',
+    'fromusername' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'createtime' => '1477841262',
+    'msgtype' => 'event',
+    'event' => 'LOCATION',
+    'latitude' => '30.256605',
+    'longitude' => '119.718040',
+    'precision' => '65.000000',
+    'from' => 'owMq5wMBeNntNK7kVrENU_NtuW1U',
+    'to' => 'gh_d08df8dd58c3',
+    'time' => '1477841262',
+    'type' => 'trace',
+    'location_x' => '30.256605',
+    'location_y' => '119.718040',
+  ),
+  'module' => 'default',
+  'rule' => '-1',
+)
+
+2016-10-30 23:27:43 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
