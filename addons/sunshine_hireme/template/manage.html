@@ -1,0 +1,130 @@
+{template 'header'}
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">快租</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="javascript:window.location.href=document.referrer">返回平台操作页面</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</div>
+<div style="height:100px;">
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2">
+			<div class="list-group" id="manage_tag_list" style="cursor:pointer;">
+				<!-- 用户管理 -->
+				<a class="list-group-item"   href="{php echo $this->createWebUrl('userManageList')}" target="indexiframe">
+					<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;&nbsp;用户管理
+				</a>
+				<a class="list-group-item"   href="{php echo $this->createWebUrl('managerecordsclass')}" target="indexiframe">
+					<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;&nbsp;分类管理
+				</a>
+				<a class="list-group-item"  onclick="toggle_tag('UserWaitRefundManage')">
+					<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp;退款管理
+				</a>
+				<div style="display:none" id='toggle_tag_UserWaitRefundManage'>
+					<a class="list-group-item"   href="{php echo $this->createWebUrl('UserWaitRefundManage')}" target="indexiframe">
+						<span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;&nbsp;退款申请处理
+					</a>
+					<a class="list-group-item"   href="{php echo $this->createWebUrl('UserRefundManage')}" target="indexiframe">
+						<span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;&nbsp;已退款
+					</a>
+				</div>
+				<a class="list-group-item"  onclick="toggle_tag('userdraw')">
+					<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp;提现管理
+				</a>
+				<div style="display:none" id='toggle_tag_userdraw'>
+					<a class="list-group-item"   href="{php echo $this->createWebUrl('UserDrawManage')}" target="indexiframe">
+						<span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;&nbsp;提现申请
+					</a>
+					<a class="list-group-item"   href="{php echo $this->createWebUrl('UserDrawManageHistory')}" target="indexiframe">
+						<span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;&nbsp;提现记录
+					</a>
+				</div>			
+				<a class="list-group-item"  onclick="toggle_tag('hire')">
+					<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp;出租审核
+				</a>
+				<div style="display:none" id='toggle_tag_hire'>
+					<a class="list-group-item"   href="{php echo $this->createWebUrl('hirewaitmanage')}" target="indexiframe">
+						<span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;&nbsp;待审核
+					</a>
+					<a class="list-group-item"   href="{php echo $this->createWebUrl('hireallowmanage')}" target="indexiframe">
+						<span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;&nbsp;审核通过
+					</a>
+					<a class="list-group-item"   href="{php echo $this->createWebUrl('hiredenymanage')}" target="indexiframe">
+						<span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;&nbsp;审核未通过
+					</a>
+				</div>
+				<a class="list-group-item"   href="{php echo $this->createWebUrl('setadmin')}" target="indexiframe">
+					<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;&nbsp;绑定管理员
+				</a>
+				<a class="list-group-item" onclick="toggle_tag('settings')">
+					<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp;系统设置
+				</a>
+				<div style="display:none" id='toggle_tag_settings'>
+					<a class="list-group-item"   href="{php echo $this->createWebUrl('setnotice')}" target="indexiframe">
+						<span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;&nbsp;消息模板
+					</a>
+					<a class="list-group-item"   href="{php echo $this->createWebUrl('setsms')}" target="indexiframe">
+						<span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;&nbsp;短信配置
+					</a>
+					<a class="list-group-item"   href="{php echo $this->createWebUrl('setcert')}" target="indexiframe">
+						<span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;&nbsp;支付配置
+					</a>
+				</div>
+				<a class="list-group-item"   href="{php echo $this->createWebUrl('SetDisclaimer')}" target="indexiframe">
+					<span class="glyphicon glyphicon-chevron-right"></span>&nbsp;&nbsp;&nbsp;公告声明
+				</a>
+			</div>
+		</div>
+		<div class="col-md-10">
+			<div class="panel panel-info">
+				<div class="panel-heading" id="panel_heading">
+					<span class="glyphicon glyphicon-th-large"></span>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="panel-body">
+				<!-- 16:9 aspect ratio -->
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="{php echo $this->createWebUrl('setnotice')}" name="indexiframe"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(function() {
+	// 点击列表标签变色
+	$("#manage_tag_list a").click(function(){
+		$("#manage_tag_list a").attr("class","list-group-item");
+		$(this).attr("class","list-group-item active");
+		
+		$("#panel_heading").html($(this).html());
+	});
+})
+
+function toggle_tag(val) {
+		
+		var elem = $("#toggle_tag_"+val);
+		if(elem.is(':visible')) {
+			elem.hide('normal');
+		}else {
+			$("[id^=toggle_tag_]").hide();
+			elem.show('normal');
+		}
+	}
+
+		
+</script>
+{template 'footer'}

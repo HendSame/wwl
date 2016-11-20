@@ -1,0 +1,69 @@
+{template 'header'}
+<div class="container-fluid">
+	<table class="table">
+		<tr>
+			<th width="40">#</th>
+			<th width="70">头像</th>
+			<th width="70">用户</th>
+			<th width="70">时薪</th>
+			<th>范围</th>
+			<th>时间</th>
+			<th>操作</th>
+		</tr>
+		{loop $list $key $item}
+		<tr id="item_{$item['id']}">
+			<td>{php echo $key +1+($page-1)*$pagesize}</td>
+			<td>
+				<img style="width:48px;height:48px;" src="{php echo $item['uinfo']['headimgurl']}">
+			</td>
+			<td>{php echo $item['uinfo']['nickname']}</td>
+			<td>{php echo $item['salary']}</td>
+			<td>{php echo $item['hire_range']}</td>
+			<td>{$item['add_time']}</td>
+			<td>
+				<button class="btn btn-sm btn-info" onclick="showDetail('{$item['id']}')">查看图片</button>
+				<form action="{php echo $this->createWebUrl('HireApplyHandle')}" method="post">
+					<input type="hidden" name="rid" value="{$item['id']}">
+					<input type="hidden" name="status" value="allow">
+					<input type="hidden" name="token" value="{$_W['token']}">
+					<input type="hidden" name='backurl' value="{php echo $this->createWebUrl('hirewaitmanage',array('page'=>$page))}">
+					<input type="submit" class="btn btn-sm btn-success" name="submit" value="审核通过">
+				</form>
+				<form action="{php echo $this->createWebUrl('HireApplyHandle')}" method="post">
+					<input type="hidden" name="rid" value="{$item['id']}">
+					<input type="hidden" name="status" value="deny">
+					<input type="hidden" name="token" value="{$_W['token']}">
+					<input type="hidden" name='backurl' value="{php echo $this->createWebUrl('hirewaitmanage',array('page'=>$page))}">
+					<input type="submit" class="btn btn-sm btn-danger" name="submit" value="拒绝">
+				</form>
+			</td>
+			{loop $item['albums'] $a $b}
+			<input type="hidden" id="image_{$item['id']}_{$a}" value="{$b['img_url']}">
+			{/loop}
+		</tr>
+		{/loop}
+	</table>
+	{php echo pagination($count,$page,$pagesize)}
+</div>
+<!-- 模态框 -->
+<div class="modal fade bs-example-modal-sm"  tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="moment_detail_layer">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function showDetail(id) {
+		var images = $("input[id^=image_"+id+"]");
+		var html = "";
+		images.each(function(i,elem) {
+			html += "<img style='width:100%' src='"+$(elem).val()+"'>";
+		})
+		$("#moment_detail_layer .modal-body").html(html);
+		$("#moment_detail_layer").modal('show');
+	}
+</script>
+{template 'footer'}

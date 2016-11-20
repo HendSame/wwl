@@ -1,0 +1,128 @@
+{template 'common/header'}
+{template 'common/menu'}
+<ul class="nav nav-tabs">
+	<li class="active"><a href="">系统设置</a></li>
+</ul>
+<div class="main">
+<form action="" method="post" class="form-horizontal form" enctype="multipart/form-data" id="form1">
+  <div class="panel panel-default">
+    <div class="panel-heading">验证码参数设置 </div>
+    <div class="panel-body">    
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">是否修改系统文件</label>
+        <div class="col-sm-9 col-xs-12">
+          <label class="radio-inline">
+            <input type="radio" name="file" value="1" {if $settings['file'] == 1} checked="true" {/if}>开启</label>
+          <label class="radio-inline">
+            <input type="radio" name="file" value="0" {if $settings['file'] == 0} checked="true" {/if}>关闭(请去系统更新文件即可)</label>
+        </div>
+      </div>    
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">appkey</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="appkey" class="form-control" value="{$settings['appkey']}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">secretKey</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="secretKey" class="form-control" value="{$settings['secretKey']}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">X_code验证码变量名</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="x_code" class="form-control" value="{$settings['x_code']}" />
+          <div class="help-block">短信模板内第一个变量名</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">x_product产品名称变量名</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="x_product" class="form-control" value="{$settings['x_product']}" />
+          <div class="help-block">短信模板内第二个变量名</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">签名设置</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="freesignname" class="form-control" value="{$settings['freesignname']}" />
+          <div class="help-block">必须要填写审核的签名或系统默认的签名</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">模板编号</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="templatecode" class="form-control" value="{$settings['templatecode']}" />
+          <div class="help-block">必须要填写审核的模板编号</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">语音验证码</label>
+        <div class="col-sm-9 col-xs-12">
+          <label class="radio-inline">
+            <input type="radio" name="style" value="2" {if $settings['style'] == 2} checked="true" {/if} onclick="$('#styleid').show();">
+            开启</label>
+          <label class="radio-inline">
+            <input type="radio" name="style" value="1" {if $settings['style'] != 2} checked="true" {/if} onclick="$('#styleid').hide();">
+            关闭</label>
+        </div>
+      </div>
+      <div class="form-group" id="styleid" {if $settings['style']!=2 } style="display: none;" {/if} >
+      <label class="col-xs-12 col-sm-3 col-md-2 control-label">语音号码</label>
+      <div class="col-sm-9 col-xs-12">
+        <input type="text" name="calledshownum" class="form-control" value="{$settings['calledshownum']}" />
+        <span class="help-block">传入的显示号码必须是阿里大鱼“管理中心-语音号码管理”中申请通过的号码</span> </div>
+      <label class="col-xs-12 col-sm-3 col-md-2 control-label">文本转语音模板ID</label>
+      <div class="col-sm-9 col-xs-12">
+        <input type="text" name="ttscode" class="form-control" value="{$settings['ttscode']}" />
+        <span class="help-block">传入的语音文件必须是在阿里大鱼“管理中心-文本转语音模板管理”中的可用模板ID</span> </div>
+    </div>
+
+  </div>
+  </div> 
+ 
+  <div class="panel panel-default">
+    <div class="panel-heading">多方通话参数设置 </div>
+    <div class="panel-body">
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">主叫号显</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="callershownum" class="form-control" value="{$settings['callershownum']}" />
+          <div class="help-block">显示号码格式如下057188773344，4001112222，95500</div>
+        </div>
+      </div>
+            <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">被叫号显</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="calledshownum" class="form-control" value="{$settings['calledshownum']}" />
+          <div class="help-block">显示号码格式如下057188773344，4001112222，95500</div>
+        </div>
+      </div>  
+      
+  </div>
+  </div>
+  
+    <div class="panel panel-default">
+    <div class="panel-heading">语音通知参数设置 </div>
+    <div class="panel-body">
+            <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">被叫号显</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="called_show_num" class="form-control" value="{$settings['called_show_num']}" />
+          <div class="help-block">显示号码格式如下057188773344，4001112222，95500</div>
+        </div>
+      </div>  
+      
+  </div>
+  </div>
+  
+  
+  
+     <div class="form-group col-sm-12">
+      <input type="submit" name="submit" value="提交" class="btn btn-primary col-lg-1" />
+      <input type="hidden" name="token" value="{$_W['token']}" />
+    </div>
+</form>
+</div>
+{template 'common/footer'}

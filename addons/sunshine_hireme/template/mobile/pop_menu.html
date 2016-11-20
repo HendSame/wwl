@@ -1,0 +1,50 @@
+<ul style="list-style:none;width:100px;position:fixed;z-index:10000;left:0px;bottom:55px;margin:2px;display:none;color:#a6a6a6;line-height:45px;text-align:center;border-radius:5px;border:1px solid #979797" id="bottom_menu">
+<li>
+	<div class="fa fa-home"></div>
+	{if $this->settings['menu_fhzy_jump_url']}
+	<i onclick="window.location.href='{php echo $this->settings['menu_fhzy_jump_url']}'">
+	返回主页
+	</i>
+	{else}
+	<i onclick="window.location.href='{php echo $this->createMobileUrl('index')}'">
+	返回主页
+	</i>
+	{/if}
+</li>
+<li onclick="window.location.href='{php echo $this->createMobileUrl('MomentAdd')}'">
+	<div class="fa fa-camera"></div>
+	<i>
+	发布动态
+	{if $remindmessage}
+    <div class="ui-badge-cornernum">{$remindmessage}</div>
+    {/if}
+	</i>
+</li>
+<li onclick="window.location.href='{php echo $this->createMobileUrl('messagebox')}'">
+	<div class="fa fa-comments"></div>
+	<i >
+	我的好友
+	{if $remindmessage}
+    <div class="ui-badge-cornernum">{$remindmessage}</div>
+    {/if}
+	</i>
+</li>
+<li {if $this->menu == 'usercenter'}class="current"{/if}  onclick="window.location.href='{php echo $this->createMobileUrl('usercenter')}'">
+	<div class="fa fa-user"></div>
+	<i>
+    个人中心
+    </i>
+</li>
+</ul>
+<script type="text/javascript">
+	$("#bottom_menu_li").click(function() {
+		var sh = $("#bottom_menu").css('display');
+		$("#bottom_menu").toggle();
+		if(sh == 'none') {
+			$(this).css('background-color','#000000');
+		}else {
+			$(this).css({'background-color':'#1f2127','color':'#a6a6a6'});
+		}
+	})
+
+</script>

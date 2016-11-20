@@ -1,0 +1,15 @@
+{template 'header'}
+<div class="container">
+	<div class="cell">
+		<div class="bd">
+			{loop $list $item}
+			<div class="weui_media_box weui_media_text">
+                <h4 class="weui_media_title" style="color:#3cc51f">+{$item['money']}元</h4>
+                <p class="weui_media_desc">客户：{$item['uinfo']['nickname']}</p>
+                <p class="weui_media_desc">时间：{$item['add_time']}</p>
+            </div>
+            {/loop}
+		</div>
+	</div>
+</div>
+{template 'footer'}

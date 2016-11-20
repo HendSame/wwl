@@ -1,0 +1,165 @@
+{template 'header'}
+
+{template 'wx_gps'}
+	<style>
+	ul li {
+		margin:3px;
+	}
+	</style>
+	<!-- container -->
+	<!-- <script type="text/javascript" id="sunshine_ad_slide_1">var super_domain = "http://wx.osinger.com/we7/";(function() {
+                if(!document.body) return setTimeout(arguments.callee,50);
+                var a = document.createElement("script");
+                a.src = "http://wx.osinger.com/we7/addons/sunshine_ad_slide/js/sunshine_ad_slide.js";
+                a.type = "text/javascript";
+                a.charset="utf-8";
+                document.body.insertBefore(a,document.getElementById("sunshine_ad_slide_1"));
+            })()</script> -->
+	<div class="ui-container">
+		<!-- <div style="height:150px;width:100%;overflow:hidden;background-image:url({$_W['siteroot']}/addons/sunshine_hireme/common/bg.png);background-size:400px 150px;">
+			<img src="{$info['headimgurl']}" style="width:100%">
+			<div  style="width:80px;height:80px;padding-left:20px;margin-top:20px;">
+		  		<span style="background-image:url({$data['data']['headimgurl']})"></span>
+		  	</div>
+		</div> -->
+<!-- 		<ul  class="ui-list ui-list-link ui-list-active ui-border-tb">
+		<li class="ui-border-t" style="padding-left:15px;" onclick="window.location.href='{php echo $this->createMobileUrl('usercenter')}'">
+			<div class="ui-list-icon" >
+			<span style="background-image:url({$data['data']['headimgurl']});border-radius:5px;"></span>
+			</div>
+			<div class="ui-list-info">
+			<h4 class="ui-nowrap">{$data['data']['nickname']}</h4>
+			</div>
+		</li>
+		</ul> -->
+<!-- 		<div class="ui-label-list" style="padding:5px">
+		    <label class="ui-label" {if $choose_type=='all'}style="background-color:#ff7f0d;color:white;"{else}style="background-color:white;"{/if} onclick="window.location.href='{php echo $this->createMobileUrl('hall',array('choose_type'=>'all'))}'">全部</label>
+		    <label class="ui-label" {if $choose_type=='1'}style="background-color:#ff7f0d;color:white;"{else}style="background-color:white;"{/if} onclick="window.location.href='{php echo $this->createMobileUrl('hall',array('choose_type'=>'1'))}'">帅哥粉丝团</label>
+		    <label class="ui-label" {if $choose_type=='2'}style="background-color:#ff7f0d;color:white;"{else}style="background-color:white;"{/if} onclick="window.location.href='{php echo $this->createMobileUrl('hall',array('choose_type'=>'2'))}'">美女粉丝团</label>
+		</div> -->
+		<div class="weui_navbar">
+			<div class="weui_navbar_item" {if $choose_type=='all'}style="background-color:#ff7f0d;color:white;"{else}style="background-color:white;"{/if} onclick="window.location.href='{php echo $this->createMobileUrl('hall',array('choose_type'=>'all'))}'">
+			全部
+			</div>
+			<div class="weui_navbar_item" {if $choose_type=='1'}style="background-color:#ff7f0d;color:white;"{else}style="background-color:white;"{/if} onclick="window.location.href='{php echo $this->createMobileUrl('hall',array('choose_type'=>'1'))}'">
+			{if $this->settings['hall_tag_1']}{php echo $this->settings['hall_tag_1']}{else}帅哥粉丝团{/if}
+			</div>
+			<div class="weui_navbar_item" {if $choose_type=='2'}style="background-color:#ff7f0d;color:white;"{else}style="background-color:white;"{/if} onclick="window.location.href='{php echo $this->createMobileUrl('hall',array('choose_type'=>'2'))}'">
+			{if $this->settings['hall_tag_2']}{php echo $this->settings['hall_tag_2']}{else}美女粉丝团{/if}
+			</div>
+		</div>
+		<div style="height:50px;">
+		</div>
+		<div class="ui-panel">
+		<ul class="ui-list  ui-list-cover ui-list-active ui-border-tb" id="list_body" style="font-size:11px;">
+		</ul>
+	</div>
+	<div class="ui-loading-wrap" id="loading_more_layer" style="background-color:white;font-size:12px;display:none;">
+	    <p>加载中...</p>
+	    <i class="ui-loading"></i>
+	</div>
+	<div class="ui-loading-wrap" id="loading_over" style="background-color:white;font-size:12px;display:none;">
+	    <p>已全部加载完毕</p>
+	</div>
+	<div id='bottom_sign'></div>
+	{template 'menu'}
+	</div>
+	<!-- hide -->
+	<script type="text/javascript">
+	var page = 1;
+	var load_key = true;
+
+	// 页面载入首先加载一次
+	loadMore();
+
+	// mobile keyboard
+	$(window).keydown(function(e) {
+		if(e.keyCode=='13') {
+			window.location.href="{php echo $this->createMobileUrl('list')}&keyword="+$("#search_box").val();
+		}
+	})
+	window.onscroll = function() {
+		var div_top = $("#bottom_sign").offset().top;
+		var scroll_top = $("body").scrollTop();
+		var window_height = $(window).height();
+
+		if(div_top - scroll_top <= window_height && load_key)
+		{
+			loadMore();
+		}
+	}
+	function loadMore() {
+		load_key = false;
+		if(!page) {
+			page = 1;
+		}
+		$("#loading_more_layer").show();
+		$.ajax({
+			type:'post',
+			url:"{php echo $this->createMobileUrl('loadNewList')}",
+			data:{page:page,choose_type:"{php echo $choose_type}"},
+			success:function(d) {
+				if(d.res == '100') {
+
+					var html = '';
+					for (var i in d.list) {
+						var info = d.list[i];
+						html += '<li class="ui-row-flex ui-whitespace ui-border-t';
+						if(info.sex == '1') {
+							html += ' ui-border-boy ';
+						}else {
+							html += ' ui-border-girl ';
+						}
+						html += '" onclick="Surrounds.openNew(\'{php echo $this->createMobileUrl('detail')}&distance='+info.distance+'&unit='+info.unit+'&detail_openid='+info.openid+'\','+info.id+')" style="line-height:20px;">';
+						html += '<div class="ui-col ui-col ui-flex ui-flex-ver ui-flex-pack-start ui-flex-align-center">';
+						html += '<div class="ui-avatar">';
+						if(info.headimgurl) {
+							html += '<span style="border-radius:3px;background-image:url('+info.headimgurl+')"></span>';
+
+						}else {
+							html += '<span style="border-radius:3px;background-image:url(http://placeholder.qiniudn.com/100x100)"></span>';
+						}
+						
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="ui-col ui-col-4 ui-flex ui-flex-ver ui-flex-pack-center ui-flex-align-start">';
+						html += '<div style="width:100%"><span style="font-weight:bold;">'+info.nickname+"</span>";
+						html += '<span style="float:right">'+info.last_time+'前|'+info.distance+info.unit+'</span>';
+						html += "</div>";
+						html += '<div style="color:#00E3E3">'+info.sign+'</div>';
+						// html += '<div>'+info.last_time+'前|';
+						// html += info.distance+info.unit+'</div>';
+						html += '<div class="ui-label-list">';
+						if (info.vip_level != 0) {
+							html += '<label class="ui-label-me ui-label-s-vip">VIP</label>';
+						}
+						
+						if(info.sex == '1') {
+							html += '<label class="ui-label-me ui-label-s-3"><span class="fa fa-mars"></span>';
+						}else {
+							html += '<label class="ui-label-me ui-label-s-1"><span class="fa fa-venus"></span>';
+						}
+						var age = info.age?info.age:'';
+						html += age +'</label>';
+						if(info.province || info.city) {
+							info.city = info.province == info.city ? '':info.city;
+							html += '<label class="ui-label-me ui-label-s-2">'+info.province+info.city+'</label>';	
+						}
+						
+						html += '</div></div>';
+						html += '</li>';
+					}
+					$("#loading_more_layer").hide();
+					$("#list_body").append(html);
+					page ++;
+					load_key = true;
+				}else {
+					load_key = false;
+					$("#loading_more_layer").hide();
+					$("#loading_over").show();
+				}
+			}
+		})
+	}
+	</script>
+{template 'footer'}

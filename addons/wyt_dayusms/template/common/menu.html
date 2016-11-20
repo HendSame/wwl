@@ -1,0 +1,16 @@
+<style type="text/css">
+.topmenu { position: relative; width: 100%; float: left; background: #efefef; margin-bottom: 20px; }
+.topmenu ul li a { color: #000 }
+.topmenu .dropdown-menu li a { color: #666 }
+.topmenu ul li { content: '|' }
+</style>
+
+<div class="topmenu">
+  <ul class="nav navbar-nav">
+    <li> <a href="{php echo $this->createWebUrl('set',array('op'=>'setlist'))}"><i class="fa fa-cog"></i>  通道管理</a> </li>
+    <li> <a href="{php echo $this->createWebUrl('accountlist')}"><i class="fa fa-cog"></i>  公众号管理</a> </li>
+    <li> <a href="{php echo $this->createWebUrl('set',array('op'=>'log'))}"><i class="fa fa-cog"></i>  发送记录 </a> </li>
+    <li> <a href="{php echo $this->createWebUrl('set',array('op'=>'setting'))}"><i class="fa fa-cog"></i>  默认通道管理</a> </li>
+    <li> <a href="{php echo $this->createWebUrl('set',array('op'=>'setting'))}"><i class="fa fa-cog"></i>  系统设置</a> </li>
+  </ul>
+</div>

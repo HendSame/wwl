@@ -1,0 +1,56 @@
+{template 'common/header'}
+{template 'common/menu'}
+<ul class="nav nav-tabs">
+	<li class="active"><a href="">发送记录</a></li>
+</ul>
+<div class="main panel panel-default">
+	<div class="category panel-body table-responsive">
+		<form action="" method="post">
+ 			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th style="width:50px;">ID</th>
+						<th style="width:150px;">接收手机</th>
+						<th style="width:150px;">参数code</th>
+                        <th style="width:150px;">参数product</th>
+                        <th>状态报告</th>
+                        <th style="width:150px;">短信模板</th>
+                        <th style="width:150px;">语音号码</th>
+                        <th style="width:150px;">语音模板</th>
+                        <th style="width:150px;">发送签名</th>
+						<th style="width:150px;">发送时间</th>						
+						<th style="width:150px;">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				{loop $list $v} 
+                  	<tr>
+						<td>{$v['id']}</td>
+	                    <td>{$v['mobile']}</td>
+	                    <td>{$v['code']}</td>
+                        <td>{$v['product']}</td>
+                        <td>{$v['result']}</td>
+                        <td>{$v['templatecode']}</td>
+                        <td>{$v['calledshownum']}</td>
+                        <td>{$v['ttscode']}</td>
+                        <td>{$v['freesignname']}</td>
+	                    <td>{php echo date('Y-m-d H:i',$v['createtime'])}</td>						
+						<td style="text-align:left;">
+						<a href="{php echo $this->createWebUrl('set', array('op'=>'logdel','id' => $v['id']))}" onclick="return confirm('确认删除吗？');return false;" data-toggle="tooltip" data-placement="bottom" title="删除" class="btn btn-default btn-sm"><i class="fa fa-times"></i></a>
+						</td>
+					</tr>
+				{/loop}
+				</tbody>
+			</table>
+			<table>
+			</table>
+		</form>
+ 		</div>
+</div>
+{$pager}
+<script>
+	require(['bootstrap'],function($){
+		$('.btn').tooltip();
+	});
+</script>
+{template 'common/footer'}

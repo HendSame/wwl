@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://bbs.heirui.cn" versionCode="0.6,0.7">
+	<application setting="true">
+		<name><![CDATA[快来租我]]></name>
+		<identifie><![CDATA[sunshine_hireme]]></identifie>
+		<version><![CDATA[1.9]]></version>
+		<type><![CDATA[business]]></type>
+		<ability><![CDATA[快来租我]]></ability>
+		<description><![CDATA[快来租我]]></description>
+		<author><![CDATA[不错吧]]></author>
+		<url><![CDATA[http://www.suibianlu.com]]></url>
+	</application>
+	<platform>
+		<subscribes>
+			<message type="text" />
+			<message type="image" />
+		</subscribes>
+		<handles>
+			<message type="text" />
+			<message type="image" />
+		</handles>
+		<rule embed="false" />
+		<card embed="false" />
+	</platform>
+	<bindings>
+		<cover>
+			<entry title="管理员前台" do="admin" state="" direct="false" />
+			<entry title="首页" do="index" state="" direct="false" />
+		</cover>
+		<menu>
+			<entry title="主后台" do="manage" state="" direct="true" />
+		</menu>
+	</bindings>
+	<permissions>
+	</permissions>
+	<install><![CDATA[
+CREATE TABLE IF NOT EXISTS `ims_sunshine_hireme_admin` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `uniacid` int(10) unsigned NOT NULL,
+  `openid` varchar(50) NOT NULL DEFAULT '',
+  `add_time` datetime NOT NULL,
+  `is_del` enum('y','n') NOT NULL DEFAULT 'n',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `ims_sunshine_hireme_album` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `uniacid` int(10) unsigned NOT NULL,
+  `rid` int(10) unsigned NOT NULL,
+  `openid` varchar(50) NOT NULL DEFAULT '',
+  `img_url` varchar(200) NOT NULL DEFAULT '',
+  `remark` varchar(100) NOT NULL DEFAULT '',
+  `upload_way` varchar(50) NOT NULL DEFAULT '',
+  `type` varchar(50) NOT NULL DEFAULT 'album',
+  `add_time` datetime NOT NULL,
+  `is_del` enum('y','n') DEFAULT 'n',
+  `del_time` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `ims_sunshine_hireme_comment` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `uniacid` int(10) unsigned NOT NULL,
+  `mid` int(10) unsigned NOT NULL,
+  `comment_openid` varchar(50) NOT NULL DEFAULT '',
+  `user_openid` varchar(50) NOT NULL DEFAULT '' COMMENT '记录创建人',
+  `reply_openid` varchar(50) NOT NULL DEFAULT '' COMMENT '被回复的人',
+  `content` varchar(500) NOT NULL DEFAULT '',
+  `add_time` datetime NOT NULL,
+  `is_del` enum('y','n') DEFAULT 'n',
+  `del_time` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `ims_sunshine_hireme_draw_log` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `uniacid` int(10) unsigned NOT NULL,
+  `openid` varchar(50) NOT NULL,
+  `money` int(10) NOT NULL,
+  `commision` int(10) NOT NULL,
+  `status` enum('wait','handle') DEFAULT 'wait',
+  `add_time` datetime NOT NULL,
+  `update_time` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `ims_sunshine_hireme_members` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `uniacid` varchar(50) NOT NULL DEFAULT '',
+  `openid` varchar(50) NOT NULL DEFAULT '',
+  `nickname` varchar(50) NOT NULL DEFAULT '',
+  `sex` varchar(20) NOT NULL DEFAULT '',
+  `age` varchar(10) NOT NULL DEFAULT '0' COMMENT '年龄',
+  `work` varchar(50) NOT NULL DEFAULT '' COMMENT '职业',
+  `self_intro` varchar(500) NOT NULL DEFAULT '' COMMENT '个人介绍',
+  `province` varchar(50) NOT NULL DEFAULT '',
+  `city` varchar(50) NOT NULL DEFAULT '',
+  `country` varchar(50) NOT NULL DEFAULT '',
+  `district` varchar(50) NOT NULL DEFAULT '',
+  `mobile` varchar(50) NOT NULL DEFAULT '',
+  `mobile_status` enum('y','n') DEFAULT 'n' COMMENT '手机号验证',
+  `mobile_captcha` int(6) NOT NULL,
+  `mobile_captcha_send_time` datetime NOT NULL,
+  `wx_number` varchar(50) NOT NULL DEFAULT '',
+  `headimgurl` varchar(200) NOT NULL DEFAULT '',
+  `update_time` datetime NOT NULL,
+  `lng` varchar(50) NOT NULL DEFAULT '' COMMENT '经度',
+  `lat` varchar(50) NOT NULL DEFAULT '' COMMENT '纬度',
+  `isvisible` varchar(10) NOT NULL DEFAULT 'open',
+  `frozen_money` int(10) NOT NULL,
+  `avaliable_money` int(10) NOT NULL,
+  `draw_money` int(10) NOT NULL COMMENT '提现中的冻结金额',
+  `user_qrcode` varchar(200) NOT NULL DEFAULT '',
+  `add_time` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `ims_sunshine_hireme_order` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `uniacid` int(10) unsigned NOT NULL,
+  `rid` int(10) unsigned NOT NULL,
+  `r_openid` varchar(50) NOT NULL DEFAULT '' COMMENT '订单创建人',
+  `openid` varchar(50) NOT NULL DEFAULT '' COMMENT '订购人',
+  `status` varchar(50) NOT NULL DEFAULT 'wait' COMMENT '订单的状态',
+  `add_time` datetime NOT NULL,
+  `hire_hour` int(5) NOT NULL,
+  `hire_money` int(10) NOT NULL,
+  `salary` int(10) NOT NULL,
+  `hire_remark` varchar(200) NOT NULL DEFAULT '',
+  `hire_range` varchar(200) NOT NULL DEFAULT '',
+  `tid` varchar(100) NOT NULL DEFAULT '' COMMENT '模块生成的业务订单号',
+  `uniontid` varchar(100) DEFAULT '' COMMENT '商户订单号',
+  `transaction_id` varchar(100) DEFAULT '' COMMENT '微信支付订单号',
+  `is_del` enum('y','n') NOT NULL DEFAULT 'n',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `openid_rid` (`openid`,`rid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `ims_sunshine_hireme_records` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `uniacid` varchar(50) NOT NULL DEFAULT '',
+  `openid` varchar(50) NOT NULL DEFAULT '',
+  `salary` varchar(10) NOT NULL DEFAULT '' COMMENT '时薪',
+  `freetime_begin` datetime NOT NULL COMMENT '档期开始',
+  `freetime_end` datetime NOT NULL,
+  `hire_class` int(10) NOT NULL,
+  `hire_range` varchar(200) NOT NULL DEFAULT '' COMMENT '出租范围',
+  `add_time` datetime NOT NULL,
+  `status` varchar(50) NOT NULL DEFAULT 'wait' COMMENT '审核状态',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `ims_sunshine_hireme_records_class` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `uniacid` int(10) unsigned NOT NULL,
+  `sort_id` int(10) NOT NULL,
+  `class_name` varchar(50) NOT NULL,
+  `class_logo` varchar(200) NOT NULL,
+  `add_time` datetime NOT NULL,
+  `status` enum('y','n') DEFAULT 'y',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `ims_sunshine_hireme_refund` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `uniacid` int(10) unsigned NOT NULL,
+  `oid` int(10) unsigned NOT NULL,
+  `operator` varchar(50) NOT NULL DEFAULT 'system' COMMENT '发起人',
+  `status` varchar(50) NOT NULL DEFAULT 'wait' COMMENT '退款状态wait,refuse,handle',
+  `reason` varchar(200) NOT NULL DEFAULT '' COMMENT '退款申请理由',
+  `add_time` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `ims_sunshine_hireme_settings` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `uniacid` int(10) unsigned NOT NULL,
+  `name` varchar(200) NOT NULL DEFAULT '',
+  `value` varchar(200) NOT NULL DEFAULT '',
+  `add_time` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uniacid_name` (`uniacid`,`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `ims_sunshine_hireme_wallet` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `uniacid` int(10) unsigned NOT NULL,
+  `oid` int(10) unsigned NOT NULL,
+  `openid` varchar(50) NOT NULL,
+  `money` int(10) NOT NULL,
+  `add_time` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+]]></install>
+	<uninstall><![CDATA[
+DROP TABLE IF EXISTS `ims_sunshine_hireme_admin`;
+DROP TABLE IF EXISTS `ims_sunshine_hireme_album`;
+DROP TABLE IF EXISTS `ims_sunshine_hireme_comment`;
+DROP TABLE IF EXISTS `ims_sunshine_hireme_draw_log`;
+DROP TABLE IF EXISTS `ims_sunshine_hireme_members`;
+DROP TABLE IF EXISTS `ims_sunshine_hireme_order`;
+DROP TABLE IF EXISTS `ims_sunshine_hireme_records`;
+DROP TABLE IF EXISTS `ims_sunshine_hireme_records_class`;
+DROP TABLE IF EXISTS `ims_sunshine_hireme_refund`;
+DROP TABLE IF EXISTS `ims_sunshine_hireme_settings`;
+DROP TABLE IF EXISTS `ims_sunshine_hireme_wallet`;
+]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

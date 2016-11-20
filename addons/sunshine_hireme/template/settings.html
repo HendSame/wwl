@@ -1,0 +1,176 @@
+{template 'header'}
+	<div class="container-fluid">
+	<h4><span class='glyphicon glyphicon-circle-arrow-right'></span>&nbsp;&nbsp;模块自定义</h4>
+		<div class="row">
+			<div class="col-md-6">
+				<label>主标题</label>
+				<input type="text" class="form-control" value="{$settings['super_title']}" id='super_title' placeholder='超级粉丝社区'>
+				<p class="help-block">默认为“超级粉丝社区”</p>
+				<br>
+				<button class="btn btn-sm btn-info" onclick="doSave('super_title_set')">保存</button>
+			</div>
+		</div>
+		<br>
+	<h4><span class='glyphicon glyphicon-circle-arrow-right'></span>&nbsp;&nbsp;分享设置</h4>
+		<div class="row">
+			<div class="col-md-6">
+				<label>标题</label>
+				<input type="text" class="form-control" value="{$settings['share_title']}" id='share_title' placeholder=''>
+				<p class="help-block">默认为“超级粉丝社区”</p>
+				<label>分享描述</label>
+				<input type="text" class="form-control" value="{$settings['share_content']}" id='share_content' placeholder=''>
+				<p class="help-block">默认为空</p>
+				<p class="help-block">分享图片默认为头像或者/addons/sunshine_hireme/common/share_img.jpg</p>
+				<br>
+				<button class="btn btn-sm btn-info" onclick="doSave('share_info')">保存</button>
+			</div>
+		</div>
+		<br>
+		<h4><span class='glyphicon glyphicon-circle-arrow-right'></span>&nbsp;&nbsp;首页公告栏</h4>
+		<div class="row">
+			<div class="col-md-6">
+				<label>公告内容</label>
+				<input type="text" class="form-control" value="{$settings['public_notice']}" id='public_notice' placeholder='填写公告内容'>
+				<p class="help-block">如果为空则不显示</p>
+				<br>
+				<button class="btn btn-sm btn-info" onclick="doSave('public_notice')">保存</button>
+			</div>
+		</div>
+		<br>
+		<h4><span class='glyphicon glyphicon-circle-arrow-right'></span>&nbsp;&nbsp;七牛云存储配置</h4>
+		<div class="row">
+			<div class="col-md-6">
+				<label>AK</label>
+				<input type="text" class="form-control" value="{$settings['qiniu_ak']}" id='qiniu_ak' placeholder='AK'>
+				<label>SK</label>
+				<input type="text" class="form-control" value="{$settings['qiniu_sk']}" id='qiniu_sk' placeholder='SK'>
+				<label>BUCKET (空间名称)</label>
+				<input type="text" class="form-control" value="{$settings['qiniu_bucket']}" id='qiniu_bucket' placeholder='BUCKET'>
+				<label>七牛域名</label>
+				<input type="text" class="form-control" value="{$settings['qiniu_domain']}" id='qiniu_domain' placeholder='domain'>
+				<br>
+				<button class="btn btn-sm btn-info" onclick="doSave('qiniu_info')">保存</button>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				{if $settings['qiniuallow'] == 'open'}
+				<button class="btn btn-sm btn-success form-control" onclick="doSave('qiniuallow','close')">已开启七牛</button>
+				{else}
+				<button class="btn btn-sm btn-danger form-control" onclick="doSave('qiniuallow','open')">已关闭七牛</button>
+				{/if}
+				<p class="help-block">
+				开启后，系统会将所有的上传文件写入到七牛云存储中。减少服务器空间压力。开启前请确保信息填写完整无误！
+				</p>
+				<p class="help-block">
+					如果微擎开启了oss，将优先默认使用oss存储
+				</p>
+			</div>
+		</div>
+		<br>
+	</div>
+	<script type="text/javascript">
+
+	function doSave(type,val) {
+		
+		// 百度key提交
+		if(type == 'baidu_key') {
+			var baidu_key = $("#baidu_key").val();
+			if(!baidu_key) {
+				alert('baidu_key is empty!');
+				return;
+			}
+		}
+
+		// 授权key提交
+		if(type == 'oauth') {
+			var oauth_appid = $('#oauth_appid').val(),
+				oauth_appsecret = $('#oauth_appsecret').val();
+
+			if(!oauth_appid || !oauth_appsecret) {
+				alert('appid or appsecret is empty');
+				return;
+			}
+		}
+
+		// kaiguan
+		if(type == 'opengetuserinfo') {
+
+		}
+
+		// 七牛信息
+		if(type == 'qiniu_info') {
+			var qiniu_ak = $("#qiniu_ak").val(),
+				qiniu_sk = $("#qiniu_sk").val(),
+				qiniu_bucket = $("#qiniu_bucket").val(),
+				qiniu_domain = $("#qiniu_domain").val();
+		}
+
+		// 七牛开关
+		if(type == 'qiniuallow') {
+
+		}
+
+		// 分享设置
+		if(type == 'share_info') {
+			var share_title = $("#share_title").val(),
+				share_content = $("#share_content").val();
+		}
+
+		// 模块主标题设置
+		if(type == 'super_title_set') {
+			var super_title = $("#super_title").val();
+			if(!super_title) {
+				alert('super_title is empty!');
+				return;
+			}
+		}
+
+		// 首页滚动公告
+		if(type == 'public_notice') {
+			var public_notice = $("#public_notice").val();
+		}
+
+		$.ajax({
+			type:'post',
+			data:{
+				dataType:type, // 数据类型区分
+
+				baidu_key:baidu_key, // 百度key
+				// 接口借用授权
+				oauth_appid:oauth_appid,
+				oauth_appsecret:oauth_appsecret,
+				// 开启授权
+				opengetuserinfo:val,
+				// 商家入驻开关
+				merchantsallow:val,
+				// 七牛密钥
+				qiniu_ak:qiniu_ak,
+				qiniu_sk:qiniu_sk,
+				qiniu_bucket:qiniu_bucket,
+				qiniu_domain:qiniu_domain,
+				// 七牛开关
+				qiniuallow:val,
+				// 分享设置
+				share_title:share_title,
+				share_content:share_content,
+				// 模块主标题自定义
+				super_title:super_title,
+				public_notice:public_notice
+			},
+			url:"{php echo $this->createWebUrl('settingform')}",
+			success:function(d) {
+				if(d.res == '100') {
+					alert('保存成功');
+					window.location.href='';
+				}else if(d.res == '111') {
+					alert(d.msg);
+				}else {
+					alert(d.msg);
+				}
+			}
+		})
+	}
+	</script>
+{template 'footer'}

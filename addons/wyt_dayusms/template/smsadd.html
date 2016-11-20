@@ -1,0 +1,126 @@
+{template 'common/header'}
+{template 'common/menu'}
+<ul class="nav nav-tabs">
+	<li class="active"><a href="{php echo $this->createWebUrl('set',array('op'=>'setpost'));}">添加短信通道</a></li>	
+	<li><a href="{php echo $this->createWebUrl('set',array('op'=>'setlist'))}">短信通道管理</a></li>
+</ul>
+<div class="main">
+<form action="" method="post" class="form-horizontal form" enctype="multipart/form-data" id="form1">
+  <div class="panel panel-default">
+    <div class="panel-heading">短信通道参数设置 </div>
+    <div class="panel-body">
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">appkey</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="appkey" class="form-control" value="{$settings['appkey']}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">secretKey</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="secretKey" class="form-control" value="{$settings['secretKey']}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">X_code验证码变量名</label>
+        <div class="col-sm-9 col-xs-12">
+          <input name="x_code" type="text" class="form-control" placeholder="code" value="{$settings['x_code']}" />
+          <div class="help-block">短信模板内第一个变量名</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">x_product产品名称变量名</label>
+        <div class="col-sm-9 col-xs-12">
+          <input name="x_product" type="text" class="form-control" placeholder="product" value="{$settings['x_product']}" />
+          <div class="help-block">短信模板内第二个变量名</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">签名设置</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="freesignname" class="form-control" value="{$settings['freesignname']}" />
+          <div class="help-block">必须要填写审核的签名或系统默认的签名</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">模板编号</label>
+        <div class="col-sm-9 col-xs-12">
+          <input type="text" name="templatecode" class="form-control" value="{$settings['templatecode']}" />
+          <div class="help-block">必须要填写审核的模板编号</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 col-sm-3 col-md-2 control-label">语音验证码</label>
+        <div class="col-sm-9 col-xs-12">
+          <label class="radio-inline">
+            <input type="radio" name="style" value="2" {if $settings['style'] == 2} checked="true" {/if} onclick="$('#styleid').show();">
+            开启</label>
+          <label class="radio-inline">
+            <input type="radio" name="style" value="1" {if $settings['style'] == 1} checked="true" {/if} onclick="$('#styleid').hide();">
+            关闭</label>
+        </div>
+      </div>
+      <div class="form-group" id="styleid" {if $settings['style']==1}style="display: none;"{/if}>
+      <label class="col-xs-12 col-sm-3 col-md-2 control-label">语音号码</label>
+      <div class="col-sm-9 col-xs-12">
+        <input type="text" name="calledshownum" class="form-control" value="{$settings['calledshownum']}" />
+        <span class="help-block">传入的显示号码必须是阿里大鱼“管理中心-语音号码管理”中申请通过的号码</span> </div>
+      <label class="col-xs-12 col-sm-3 col-md-2 control-label">文本转语音模板ID</label>
+      <div class="col-sm-9 col-xs-12">
+        <input type="text" name="ttscode" class="form-control" value="{$settings['ttscode']}" />
+        <span class="help-block">传入的语音文件必须是在阿里大鱼“管理中心-文本转语音模板管理”中的可用模板ID</span> </div>
+    </div>
+    <div class="form-group">
+      <label class="col-xs-12 col-sm-3 col-md-2 control-label" style="color:red">安全码</label>
+      <div class="col-sm-9 col-xs-12">
+        <div class="input-group">
+          <input type="text" name="safetycode" class="form-control" value="{$settings['safetycode']}" readonly />
+          <span class="input-group-addon" style="cursor:pointer" onclick="tokenGen();">生成新的</span> </div>
+        <div class="help-block">发送短信用安全码，防止未授权发送短信</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-xs-12 col-sm-3 col-md-2 control-label">是否启用</label>
+      <div class="col-sm-9 col-xs-12">
+        <label for="isshow1" class="radio-inline">
+          <input type="radio" name="status" value="1" id="isshow1" {if $settings['status']=='1'}  checked="true" {/if}>
+          是</label>
+        &nbsp;&nbsp;&nbsp;
+        <label for="isshow0" class="radio-inline">
+          <input type="radio" name="status" value="0" id="isshow0"  {if $settings['status'] == '0'}  checked="true" {/if}>
+          否</label>
+      </div>
+    </div>
+    <div class="form-group col-sm-12">
+      <input type='hidden' name='id' value="{$settings['id']}" />
+      <input type="submit" name="submit" value="提交" class="btn btn-primary col-lg-1" />
+      <input type="hidden" name="token" value="{$_W['token']}" />
+    </div>
+  </div>
+  </div>
+</form>
+</div>
+<script type="text/javascript">
+
+
+
+	function tokenGen() {
+
+		var letters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+
+		var safetycode = '';
+
+		for(var i = 0; i < 32; i++) {
+
+			var j = parseInt(Math.random() * (31 + 1));
+
+			safetycode += letters[j];
+
+		}
+
+		$(':text[name="safetycode"]').val(safetycode);
+
+	}
+
+</script> 
+{template 'common/footer'}

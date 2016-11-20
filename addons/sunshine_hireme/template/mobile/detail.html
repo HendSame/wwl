@@ -1,0 +1,62 @@
+{template 'header'}
+{template 'wx_gps'}
+	<style type="text/css">
+	.ui-slider {
+		padding-top: 70%;
+	}
+	h2, .ui-list-info p {
+		
+	}
+
+	.ui-list-info {
+		line-height: 20px;
+	}
+	</style>
+	<div class="ui-container" style="background-color:white">
+		<!-- <div style="height:150px;width:100%;overflow:hidden;border-bottom:1px solid rgb(220,220,220);">
+			<img src="{$info['headimgurl']}" style="width:100%">
+		</div> -->
+		{if $albumlist}
+		<ul class="ui-whitespace ui-justify" style="overflow:hidden;padding:5px;0px;background-color:black;border:0px;" onclick="window.location.href='{php echo $this->createMobileUrl('mymoments',array('user_openid'=>$info['openid']))}'">
+			{loop $albumlist $item}
+			<li onclick="watchPic('{$item['img_url']}')" style="padding:4px 0px;">
+				<div>
+					<img src="{$item['img_url']}" style="width:70px;height:70px;border-radius:5px;">
+				</div>
+			</li>
+			{/loop}
+		</ul>
+		{/if}
+		<br>
+		<div class="ui-row-flex ui-whitespace" onclick="startTalk()">
+		    <div class="ui-col ui-col ui-flex ui-flex-ver ui-flex-pack-end ui-flex-align-center">
+		    	<div class="ui-list-icon" style="margin:0px;">
+					<span style="background-image:url({$info['headimgurl']});border-radius:3px;height:60px;width:60px;"></span>
+				</div>
+		    </div>
+		    <div class="ui-col ui-col-3 ui-flex ui-flex-ver ui-flex-align-start">
+		    	<div style="width:100%">
+		    		<span style="font-weight:bold;font-size:14px;">{$info['nickname']}</span>
+		    		<span style="float:right;color:grey;">{$info['last_refresh_time']}前|{$info['distance']}{$info['unit']}</span>
+				</div>
+		    	<div class="ui-label-list">
+					{if $info['sex'] == 1}
+					<label class="ui-label-me ui-label-s-3"><span class="fa fa-mars"></span></label>
+					{else}
+					<label class="ui-label-me ui-label-s-1"><span class="fa fa-venus"></span></label>
+					{/if}
+					{if $info['province'] || $info['city']}
+					{php $info['city'] = $info['province'] == $info['city'] ? '':$info['city']}
+					<label class="ui-label-me ui-label-s-2">{$info['province']}{$info['city']}</label>
+					{/if}
+				</div>
+				<div></div>
+				<div style="color:#ffc723">{$info['sign']}</div>
+		    </div>
+		</div>
+		<!-- moments list -->
+
+	</div>
+	<!-- 底部菜单 -->
+	{template 'detail_menu'}
+{template 'footer'}

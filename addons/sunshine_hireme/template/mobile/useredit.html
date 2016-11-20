@@ -1,0 +1,236 @@
+{template 'header'}
+<div class="container">
+	<div class="cell">
+        <!-- <div class="hd">
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd">
+                    <img class="weui_media_appmsg_thumb" src="http://wx.qlogo.cn/mmopen/BPhtv0kDDIicAFHy5e4KBgy3lEPx5DNicT0DNbbb21w0CZbjnhr3xyz2BBLEYhWGHXPoPA4mch8W8H8wSfibbPbiajVrQRL3zOicB/132" alt="">
+                </div>
+                <div class="weui_media_bd">
+                    <h4 class="weui_media_title">{php echo $info['nickname']}</h4>
+                    <p class="weui_media_desc">{php echo $info['self_intro']}</p>
+                </div>
+            </a>
+        </div> -->
+        <div class="bd">
+        <div class="weui_cells_title">
+        个人信息
+        </div>
+		<div class="weui_cells weui_cells_form">
+        <div class="weui_cell">
+            <div class="weui_cell_hd"><label for="" class="weui_label">昵称</label></div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" placeholder="必填" id="nickname" value="{php echo $info['nickname']}">
+            </div>
+        </div>
+        <div class="weui_cell weui_cell_select">
+            <div class="weui_cell_bd weui_cell_primary">
+                <select class="weui_select" name="select1" id="sex">
+                    <option value="2" {if $info['sex'] == 2}selected{/if}>女</option>
+                    <option value="1" {if $info['sex'] == 1}selected{/if}>男</option>
+                </select>
+            </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_hd"><label for="" class="weui_label">年龄</label></div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" placeholder="必填" id="age" value="{php echo $info['age']}">
+            </div>
+        </div>
+          <div class="weui_cell">
+            <div class="weui_cell_hd"><label for="" class="weui_label">职业</label></div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" placeholder="必填" id="work" value="{php echo $info['work']}">
+            </div>
+        </div>
+    </div>
+    <div class="weui_cells_title">
+    个人介绍
+    </div>
+    <div class="weui_cells weui_cells_form">
+     <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <textarea class="weui_textarea" placeholder="必填" id="self_intro" rows="3">{php echo $info['self_intro']}</textarea>
+            </div>
+        </div>
+    </div>
+     <div class="weui_cells_title">
+    位置信息({php echo $info['province']},{php echo $info['city']},{php echo $info['district']})
+    </div>
+    <div class="weui_cells weui_cells_access">
+    <!-- <div class="weui_cell">
+            <div class="weui_cell_hd"><label for="" class="weui_label">省</label></div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" placeholder="必填" id="province" value="{php echo $info['province']}" placeholder="">
+            </div>
+        </div>
+        -->
+        <div class="weui_cell weui_cell_select">
+            <div class="weui_cell_bd weui_cell_primary">
+                <select class="weui_select" name="select1" id="s_province">
+                    <option value="">省</option>
+                </select>
+            </div>
+        </div>
+         <div class="weui_cell weui_cell_select">
+            <div class="weui_cell_bd weui_cell_primary">
+                <select class="weui_select" name="select2" id="s_city">
+                    <option value="">市</option>
+                </select>
+            </div>
+        </div>
+        <div class="weui_cell weui_cell_select">
+            <div class="weui_cell_bd weui_cell_primary">
+                <select class="weui_select" name="select3" id="s_district">
+                    <option value="">区县</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="weui_cells_title">
+    手机号认证
+    </div>
+     <div class="weui_cells weui_cells_access">
+        {if $info['mobile_status'] == 'y'}
+         <a class="weui_cell" href="javascript:;">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>{php echo $info['mobile']}</p>
+            </div>
+            <div class="weui_cell_ft"><span style="color:red">已认证</span></div>
+        </a>
+        {else}
+        <a class="weui_cell" href="{php echo $this->createMobileUrl('usercheckmobile')}" onclick="save_userinfo()">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>手机号认证</p>
+            </div>
+            <div class="weui_cell_ft"><span style="color:red">（尚未认证）</span>认证</div>
+        </a>
+        {/if}
+    </div>
+    <div class="weui_cells_title">
+    微信
+    </div>
+    <div class="weui_cells weui_cells_access">
+        <div class="weui_cell">
+            <div class="weui_cell_hd"><label for="" class="weui_label">微信</label></div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <input class="weui_input" type="text" placeholder="必填" id="wx_number" value="{php echo $info['wx_number']}">
+            </div>
+        </div>
+        <a class="weui_cell" href="{php echo $this->createMobileUrl('userqrcode')}" onclick="save_userinfo()">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>微信二维码</p>
+            </div>
+            <div class="weui_cell_ft">{if !$info['user_qrcode']}<span style="color:red">（尚未添加）</span>{/if}添加/修改</div>
+        </a>
+    </div>
+    <div class="weui_cells_tips">
+    <p>进行手机号验证或者二维码修改时会自动保存之前修改的内容</p>
+    </div>
+    <div class="weui_btn_area">
+        <a class="weui_btn weui_btn_primary" href="javascript:void(0)" onclick="save_userinfo()">保存</a>
+    </div>
+	</div>
+    </div>
+</div>
+<script type="text/javascript" src="{$_W['siteroot']}/addons/sunshine_hireme/common/js/area.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var s_province = $("#s_province");
+        var s_city = $("#s_city");
+        var s_district = $("#s_district");
+
+        var r_province = '{php echo $info['province']}';
+        var r_city = '{php echo $info['city']}';
+        var r_district = '{php echo $info['district']}';
+
+        if(r_province) {
+            $("#s_province option[value="+r_province+"]").prop('selected',true);
+            change(1);
+            if(r_city) {
+                $("#s_city option[value="+r_city+"]").prop('selected',true);
+                change(2);
+                if(r_district) {
+                    $("#s_district option[value="+r_district+"]").prop('selected',true);
+                }
+            }
+        }
+    })
+    function save_userinfo() {
+        var nickname = $("#nickname").val();
+        var sex = $("#sex").val();
+        var age = $("#age").val();
+        var work = $("#work").val();
+        var self_intro = $("#self_intro").val();
+        var province = $("#s_province").val();
+        var city = $("#s_city").val();
+        var district = $("#s_district").val();
+        var mobile = $("#mobile").val();
+        var wx_number = $("#wx_number").val();
+        
+        if(!nickname) {
+            alert('昵称不能为空');
+            return false;
+        }
+        if(!sex) {
+            alert('性别不能为空');
+            return false;
+        }
+        if(!age) {
+            alert('年龄不能为空');
+            return false;
+        }
+        if(!work) {
+            alert('职业不能为空');
+            return false;
+        }
+        if(!self_intro) {
+            alert('个人介绍不能为空');
+            return false;
+        }
+        if(!province || province=='省份') {
+            alert('省不能为空');
+            return false;
+        }
+        if(!city || city == '地级市') {
+            alert('市区不能为空');
+            return false;
+        }
+        if(!district || district == '市、县级市') {
+            alert('市区不能为空');
+            return false;
+        }
+        if(!wx_number) {
+            alert('微信号码不能为空');
+            return false;
+        }
+
+        // 监测是否已经上传了图片二维码
+
+        $.ajax({
+            type:'post',
+            url:'{php echo $this->createMobileUrl('saveuserinfo')}',
+            data:{
+                nickname:nickname,
+                sex:sex,
+                age:age,
+                work:work,
+                self_intro:self_intro,
+                province:province,
+                city:city,
+                district:district,
+                mobile:mobile,
+                wx_number:wx_number,
+            },
+            success:function(d,s) {
+                if(d.res == '100') {
+                    alert("保存成功");
+                    window.location.href='';
+                }else {
+                    alert(d.msg);
+                }
+            }
+        })
+    }
+</script>
+{template 'footer'}

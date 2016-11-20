@@ -1,0 +1,57 @@
+{template 'common/header'}
+{template 'common/menu'}
+<ul class="nav nav-tabs">
+	<li><a href="{php echo $this->createWebUrl('set',array('op'=>'setpost'));}">添加短信通道</a></li>	
+	<li class="active"><a href="{php echo $this->createWebUrl('set',array('op'=>'setlist'))}">短信通道管理</a></li>
+</ul>
+<div class="main panel panel-default">
+	<div class="category panel-body table-responsive">
+		<form action="" method="post">
+ 			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th width="20">ID</th>
+						<th width="80">appkey</th>
+						<th width="300">secretKey</th>
+                        <th width="300">安全码</th>
+                        <th width="300">公共参数</th>
+						<th>更新时间</th>
+						<th>是否启用</th>
+						<th style="width:150px;">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				{loop $list $v} 
+                  	<tr>
+						<td>{$v['id']}</td>
+	                    <td>{$v['appkey']}</td>
+	                    <td>{$v['secretKey']}</td>
+                        <td>{$v['safetycode']}</td>
+                        <td><input value="{$_W['siteroot']}/app/{php echo $this->createMobileUrl('index', array('safetycode' => $v['safetycode'],'mobile' => '18688888888','code'=> '1234','product'=> '公众号名'))}" style="width:100%;" disabled readonly></td>
+	                    <td>{php echo date('Y-m-d H:i',$v['createtime'])}</td>
+						<td>{if $v['status']=='1'}<span class="label label-success">启用</span>{else}<span class="label label-danger">不启用</span>{/if}</td>
+						<td style="text-align:left;">
+							<a href="{php echo $this->createWebUrl('set',array('id' => $v['id'],'op'=>'setpost'))}" data-toggle="tooltip" data-placement="bottom" title="编辑" class="btn btn-default btn-sm"><i class="fa fa-edit"></i></a>
+							<a href="{php echo $this->createWebUrl('set', array('op'=>'setdel','id' => $v['id']))}" onclick="return confirm('确认删除吗？');return false;" data-toggle="tooltip" data-placement="bottom" title="删除" class="btn btn-default btn-sm"><i class="fa fa-times"></i></a>
+						</td>
+					</tr>
+				{/loop}
+				</tbody>
+			</table>
+			<table>
+				<tr>
+					<td>
+                       	<a class='btn btn-default' href="{php echo $this->createWebUrl('set', array('op' => 'setpost','id'=>0))}"><i class="fa fa-plus"></i> 添加短信通道</a>
+					</td>
+				</tr>
+			</table>
+		</form>
+ 		</div>
+    </div>
+{$pager}
+<script>
+	require(['bootstrap'],function($){
+		$('.btn').tooltip();
+	});
+</script>
+{template 'common/footer'}

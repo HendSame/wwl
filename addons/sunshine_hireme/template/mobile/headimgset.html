@@ -1,0 +1,90 @@
+{template 'header'}
+<style type="text/css">
+	.webuploader-pick {
+		display: block;
+		width: 90%;
+	}
+</style>
+<!-- 
+<div class="ui-header ui-header-wx">
+	<span class="ui-icon-return" onclick="window.location.href='{php echo $this->createMobileUrl('usercenter')}';" style="color:white;"></span>
+	<h1>设置头像</h1>
+	<a href="{php echo $this->createMobileUrl('index')}">
+		<i class="ui-icon-home" style="position:absolute;right:5px;top:0px;"></i>
+	</a>
+</div>
+-->
+<div class="ui-container">
+  	<div  style="width:100px;height:100px;margin:0px auto;margin-top:50px;">
+  		<img src="{$info['headimgurl']}" style="width:100%;height:100%;border-radius:3px;">
+  	</div>
+	<div>
+		<div style="overflow:hidden;padding:10px;">
+		</div>
+		<div class="ui-btn-wrap">
+		    <button class="ui-btn-lg ui-btn-primary" onclick='doSelect()'>
+		        上传头像
+		    </button>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="{$_W['siteroot']}addons/sunshine_hireme/common/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+  // 5.1 拍照、本地选图
+var images = {
+	localId: [],
+	serverId: []
+};
+function doSelect () {
+	wx.chooseImage({
+		count: 1, // 默认9
+		sizeType: ['compressed'], // 可以指定是原图还是压缩图，默认二者都有
+		sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+		success: function (res) {
+			images.localId = res.localIds;
+			alert('已选择 ' + res.localIds.length + ' 张图片');
+			doUpload();
+		}
+	});
+};
+// 5.3 上传图片
+function doUpload () {
+	if (images.localId.length == 0) {
+		alert('请先使用 chooseImage 接口选择图片');
+		return;
+	}
+	var i = 0, length = images.localId.length;
+	images.serverId = [];
+	function upload() {
+		wx.uploadImage({
+			localId: images.localId[i],
+			success: function (res) {
+				i++;
+				images.serverId.push(res.serverId);
+				if (i < length) {
+					upload();
+				}
+				else
+				{
+					alert('已上传：' + i + '/' + length);
+					$.ajax({
+						type:'post',
+						url:"{php echo $this->createMobileUrl('iconupload')}",
+						data:{media_id:images.serverId.join(',')},
+						success:function(d,s) {
+
+							window.location.href='';
+						}
+					});
+				}
+			},
+			fail: function (res) {
+				alert(JSON.stringify(res));
+			}
+		});
+	}
+	upload();
+};
+
+</script>
+{template 'footer'}

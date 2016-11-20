@@ -1,0 +1,82 @@
+{template 'header'}
+<div class="container">
+	<div class="cell">
+    <div class="hd">
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb" src="{php echo $record['uinfo']['headimgurl']}" alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">{php echo $record['uinfo']['nickname']}</h4>
+                <p class="weui_media_desc">{php echo $record['uinfo']['self_intro']}</p>
+            </div>
+        </a>
+    </div>
+	<div class="bd">
+	<!-- info begin -->
+	<div class="weui_cells_title">
+    TA的租时
+    </div>
+    <div class="weui_cells weui_cells_radio" id="hire_order_radio">
+        <label class="weui_cell weui_check_label" for="x11">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>{php echo $order['hire_hour']}小时</p>
+            </div>
+            <div class="weui_cell_ft">
+                <input type="radio" value='1' class="weui_check" name="radio1" id="x11" checked="" disabled="">
+                <span class="weui_icon_checked"></span>
+            </div>
+        </label>
+    </div>
+    <div class="weui_cells_title">
+    TA已支付租金
+    </div>
+    <div class="weui_cells weui_cells_form">
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+            <p id="hire_money">{php echo $order['hire_money']}</p>
+            </div>
+        </div>
+    </div>
+    <div class="weui_cells_title">
+    TA想带你去参加的活动
+    </div>
+    <div class="weui_cells weui_cells_checkbox" id="hire_range_all">
+        {php $hire_range_arr = explode('，',$order['hire_range'])}
+        {loop $hire_range_arr $item}
+        <label class="weui_cell weui_check_label">
+            <div class="weui_cell_hd">
+                <input type="checkbox" class="weui_check" name="hire_range" value="{$item}" disabled="" checked="">
+                <i class="weui_icon_checked"></i>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>{$item}</p>
+            </div>
+        </label>
+        {/loop}
+     </div>
+    <div class="weui_cells_title">
+    TA的留言
+    </div>
+    <div class="weui_cells weui_cells_form">
+     <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <textarea class="weui_textarea" placeholder="必填" id="hire_remark" rows="5" disabled="">{php echo $order['hire_remark']}</textarea>
+            </div>
+        </div>
+    </div>
+	<!-- info end -->
+	</div>
+	</div>
+	<div style="height:100px;">
+	</div>
+</div>
+<div class="weui_tabbar">
+	 <a href="javascript:void(0);" onclick="window.location.href='{php echo $this->createMobileUrl('userdetail',array('openid'=>$record['uinfo']['openid']))}'" class="weui_tabbar_item weui_bar_item_on">
+        <div class="weui_tabbar_icon">
+            <img src="{$_W['siteroot']}addons/sunshine_hireme/common/img/icon_nav_msg.png" alt="">
+        </div>
+        <p class="weui_tabbar_label">查看TA的个人信息</p>
+    </a>
+</div>
+{template 'footer'}

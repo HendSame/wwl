@@ -1,0 +1,113 @@
+{template 'header'}
+<style type="text/css">
+	.webuploader-pick {
+		display: block;
+		width: 90%;
+	}
+</style>
+<div class="ui-container">
+	<div>
+		<div style="overflow:hidden;padding:10px;">
+		</div>
+		<div class="ui-btn-wrap">
+		    <button class="ui-btn-lg ui-btn-primary" onclick='doSelect()'>
+		        发布照片动态
+		    </button>
+		</div>
+	</div>
+	<div class="ui-panel">
+		{loop $albumlist $key $list}
+		<h3 style="font-weight:bold;">{$key}</h3>
+		<ul class="ui-whitespace" style="overflow:hidden;">
+			{loop $list $item}
+			<li style="margin:2px;float:left;" onclick="watchPic('{$item['img_url']}')">
+				<div>
+					<img src="{$item['img_url']}" style="width:60px;height:60px;border-radius:5px;">
+				</div>
+				<p class="ui-nowrap-multi" style="font-size:10px;width:60px;white-space:nowrap;color:white;">
+				<p>
+			</li>
+			{/loop}
+			</ul>
+		{/loop}
+		<script>
+			function watchPic(url) {
+				wx.previewImage({
+					current:url,
+					 urls: [
+					 <?php 
+					 // -- php
+					 $picurls = array();
+					 foreach($albumlist as $list)
+					 {
+					 	foreach($list as $item) 
+					 	{
+					 			$picurls[] = "'".$item['img_url']."'";
+					 	}
+					 }
+					 echo join(',',$picurls);
+					 ?>
+				      ]
+				})
+			}
+		</script>
+	</div>
+</div>
+<script type="text/javascript" src="{$_W['siteroot']}addons/sunshine_hireme/common/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+  // 5.1 拍照、本地选图
+var images = {
+	localId: [],
+	serverId: []
+};
+function doSelect () {
+	wx.chooseImage({
+		count: 9, // 默认9
+		sizeType: ['compressed'], // 可以指定是原图还是压缩图，默认二者都有
+		sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+		success: function (res) {
+			images.localId = res.localIds;
+			alert('已选择 ' + res.localIds.length + ' 张图片');
+			doUpload();
+		}
+	});
+};
+// 5.3 上传图片
+function doUpload () {
+	if (images.localId.length == 0) {
+		alert('请先使用 chooseImage 接口选择图片');
+		return;
+	}
+	var i = 0, length = images.localId.length;
+	images.serverId = [];
+	function upload() {
+		wx.uploadImage({
+			localId: images.localId[i],
+			success: function (res) {
+				i++;
+				images.serverId.push(res.serverId);
+				if (i < length) {
+					upload();
+				}
+				else
+				{
+					alert('已上传：' + i + '/' + length);
+					$.ajax({
+						type:'post',
+						url:"{php echo $this->createMobileUrl('dongtaisave')}",
+						data:{media_ids:images.serverId.join(',')},
+						success:function() {
+							window.location.href='';
+						}
+					});
+				}
+			},
+			fail: function (res) {
+				alert(JSON.stringify(res));
+			}
+		});
+	}
+	upload();
+};
+</script>
+{template 'footer'}

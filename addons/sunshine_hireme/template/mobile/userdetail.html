@@ -1,0 +1,113 @@
+{template 'header'}
+<div class="container">
+    <div class="cell">
+        <div class="hd">
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd">
+                    <img class="weui_media_appmsg_thumb" src="{php echo $info['headimgurl']}" alt="">
+                </div>
+                <div class="weui_media_bd">
+                    <h4 class="weui_media_title">{php echo $info['nickname']}</h4>
+                    <p class="weui_media_desc">{php echo $info['self_intro']}</p>
+                </div>
+            </a>
+        </div>
+        <div class="bd">
+             <div class="weui_cells_title">
+            个人信息
+            </div>
+            <div class="weui_cells weui_cells_form">
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label for="" class="weui_label">昵称</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input disabled="" class="weui_input" type="text" placeholder="必填" id="nickname" value="{php echo $info['nickname']}">
+                    </div>
+                </div>
+                <div class="weui_cell weui_cell_select">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <select class="weui_select" name="select1" id="sex" disabled="">
+                            <option value="2" {if $info['sex'] == 2}selected{/if}>女</option>
+                            <option value="1" {if $info['sex'] == 1}selected{/if}>男</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label for="" class="weui_label">年龄</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input disabled="" class="weui_input" type="text" placeholder="必填" id="age" value="{php echo $info['age']}">
+                    </div>
+                </div>
+                  <div class="weui_cell">
+                    <div class="weui_cell_hd"><label for="" class="weui_label">职业</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input disabled="" class="weui_input" type="text" placeholder="必填" id="work" value="{php echo $info['work']}">
+                    </div>
+                </div>
+            </div>
+            <div class="weui_cells_title">
+            个人介绍
+            </div>
+            <div class="weui_cells weui_cells_form">
+             <div class="weui_cell">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <textarea class="weui_textarea" placeholder="必填" id="self_intro" disabled="" rows="3">{php echo $info['self_intro']}</textarea>
+                    </div>
+                </div>
+            </div>
+             <div class="weui_cells_title">
+            位置信息
+            </div>
+            <div class="weui_cells weui_cells_form">
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label for="" class="weui_label">省</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input disabled="" class="weui_input" type="text" placeholder="必填" id="province" value="{php echo $info['province']}" placeholder="">
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label for="" class="weui_label">市</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input disabled="" class="weui_input" type="text" placeholder="必填" id="city" value="{php echo $info['city']}" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div class="weui_cells_title">
+            联系方式
+            </div>
+            {if $iscansee}
+             <div class="weui_cells weui_cells_form">
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label for="" class="weui_label">手机</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input disabled="" class="weui_input" type="text" placeholder="必填" id="mobile" value="{php echo $info['mobile']}">
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label for="" class="weui_label">微信</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input disabled="" class="weui_input" type="text" placeholder="必填" id="wx_number" value="{php echo $info['wx_number']}">
+                    </div>
+                </div>
+            </div>
+            <div class="weui_cells weui_cells_access">
+                <a class="weui_cell" href="{php echo $this->createMobileUrl('userqrcodedetail',array('openid'=>$openid))}">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <p>微信二维码</p>
+                    </div>
+                    <div class="weui_cell_ft">{if !$info['user_qrcode']}<span style="color:red">（尚未添加）</span>{/if}添加/修改</div>
+                </a>
+            </div>
+            {else}
+             <div class="weui_cells weui_cells_access">
+                <a class="weui_cell"  href="javascript:;">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <p>下单后可以查看</p>
+                    </div>
+                    <div class="weui_cell_ft"><span style="color:red"></span></div>
+                </a>
+            </div>
+            {/if}
+        </div>
+    </div>
+</div>
+{template 'footer'}

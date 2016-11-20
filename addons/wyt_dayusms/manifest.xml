@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://bbs.heirui.cn" versionCode="0.6">
+	<application setting="false">
+		<name><![CDATA[大鱼短信]]></name>
+		<identifie><![CDATA[wyt_dayusms]]></identifie>
+		<version><![CDATA[1.1.5]]></version>
+		<type><![CDATA[activity]]></type>
+		<ability><![CDATA[大鱼短信]]></ability>
+		<description><![CDATA[大鱼短信]]></description>
+		<author><![CDATA[不错吧]]></author>
+		<url><![CDATA[http://www.suibianlu.com]]></url>
+	</application>
+	<platform>
+		<subscribes>
+		</subscribes>
+		<handles>
+			<message type="text" />
+		</handles>
+		<rule embed="false" />
+		<card embed="false" />
+	</platform>
+	<bindings>
+		<menu>
+			<entry title="系统管理" do="set" state="" direct="false" />
+		</menu>
+	</bindings>
+	<install><![CDATA[
+		CREATE TABLE `ims_wyt_dayusms_base` (
+		  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+		  `weid` int(11) unsigned DEFAULT NULL,
+		  `appkey` varchar(100) DEFAULT NULL,
+		  `secretKey` varchar(100) DEFAULT NULL,
+		  `format` varchar(100) DEFAULT NULL,
+		  `freesignname` varchar(100) DEFAULT NULL,
+		  `templatecode` varchar(100) DEFAULT NULL,
+		  `x_code` varchar(100) DEFAULT NULL,
+		  `style` tinyint(4) NOT NULL DEFAULT '1',
+		  `x_product` varchar(100) DEFAULT NULL,
+		  `calledshownum` varchar(100) DEFAULT NULL,
+		  `ttscode` varchar(100) DEFAULT NULL,
+		  `safetycode` varchar(100) DEFAULT NULL,
+		  `status` tinyint(4) NOT NULL DEFAULT '1',
+		  `createtime` int(10) NOT NULL,
+		  PRIMARY KEY (`id`)
+		) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+		CREATE TABLE `ims_wyt_dayusms_log` (
+		  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+		  `weid` int(11) unsigned DEFAULT NULL,
+		  `mobile` varchar(100) DEFAULT NULL,
+		  `code` varchar(100) DEFAULT NULL,
+		  `product` varchar(100) DEFAULT NULL,
+		  `result` varchar(500) DEFAULT NULL,
+		  `templatecode` varchar(100) DEFAULT NULL,
+		  `calledshownum` varchar(100) DEFAULT NULL,
+		  `ttscode` varchar(100) DEFAULT NULL,
+		  `freesignname` varchar(100) DEFAULT NULL,
+		  `createtime` varchar(100) DEFAULT NULL,
+		  PRIMARY KEY (`id`)
+		) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+		CREATE TABLE `ims_wyt_dayusms_setting` (
+		  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+		  `appkey` varchar(100) DEFAULT NULL,
+		  `secretKey` varchar(100) DEFAULT NULL,
+		  `x_code` varchar(100) DEFAULT NULL,
+		  `x_product` varchar(100) DEFAULT NULL,
+		  `calledshownum` varchar(100) DEFAULT NULL,
+		  `style` tinyint(4) NOT NULL DEFAULT '1',
+		  `ttscode` varchar(100) DEFAULT NULL,
+		  `freesignname` varchar(100) DEFAULT NULL,
+		  `templatecode` varchar(100) DEFAULT NULL,
+		  PRIMARY KEY (`id`)
+		) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+	]]></install>
+	<uninstall><![CDATA[
+		DROP TABLE IF EXISTS `ims_wyt_dayusms_setting`;
+		DROP TABLE IF EXISTS `ims_wyt_dayusms_base`;
+		DROP TABLE IF EXISTS `ims_wyt_dayusms_log`;
+	]]></uninstall>
+	<upgrade><![CDATA[upgrade.php]]></upgrade>
+</manifest>

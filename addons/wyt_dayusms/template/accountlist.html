@@ -1,0 +1,46 @@
+{template 'common/header'}
+{template 'common/menu'}
+<ul class="nav nav-tabs">
+	<li class="active"><a href="">余额管理</a></li>
+</ul>
+<div class="main panel panel-default">
+	<div class="category panel-body table-responsive">
+		<form action="" method="post">
+ 			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th width="100">Uniacid</th>
+						<th>公众号名称</th>
+						<th width="100">短信条数</th>
+                        <th width="200">签名</th>						
+					</tr>
+				</thead>
+				<tbody>
+				{loop $list $v} 
+                  	<tr>
+						<td>{$v['uniacid']}</td>
+	                    <td>{$v['name']}</td>
+	                    <td><input type="text" class="form-control" name="balance[{$v['uniacid']}]" value="{$v['balance']}"></td>
+                        <td>{$v['signature']}</td>
+					</tr>
+				{/loop}
+				</tbody>
+			</table>
+<table>
+				<tr>
+					<td>
+						<button type="submit" class="btn btn-primary" name="submit" value="提交">修改短信余额</button>
+						<input type="hidden" name="token" value="{$_W['token']}" />
+					</td>
+				</tr>
+			</table>
+		</form>
+ 		</div>
+    </div>
+{$pager}
+<script>
+	require(['bootstrap'],function($){
+		$('.btn').tooltip();
+	});
+</script>
+{template 'common/footer'}

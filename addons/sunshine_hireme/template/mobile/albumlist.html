@@ -1,0 +1,63 @@
+{template 'header'}
+{template 'wx_gps'}
+<style type="text/css">
+	.webuploader-pick {
+		display: block;
+		width: 90%;
+	}
+</style>
+	<div class="ui-container">
+		<div class="ui-row-flex ui-whitespace" style="border-top:1px solid rbg(220,220,220);">
+		    <div class="ui-col ui-col ui-flex ui-flex-ver ui-flex-pack-end ui-flex-align-center">
+		    	<div class="ui-list-icon">
+					<span style="background-image:url({$info['headimgurl']});border-radius:3px;height:60px;width:60px;"></span>
+				</div>
+		    </div>
+		    <div class="ui-col ui-col-3 ui-flex ui-flex-ver ui-flex-pack-center ui-flex-align-start" style="font-size:14px;font-weight:bold;">
+		    {$info['nickname']}
+		    </div>
+		</div>
+		{if $info['sign']}
+		<p class="ui-txt-highlight"><span style="color:#bbbbbb;">&nbsp;&nbsp;签名</span>&nbsp;&nbsp;“{$info['sign']}”</p>
+		{else}
+		<p class="ui-txt-highlight"><span style="color:#bbbbbb;">&nbsp;&nbsp;暂无签名</span></p>
+		{/if}
+		<div class="ui-panel">
+			{loop $albumlist $key $list}
+			<h3 style="font-weight:bold;">{$key}</h3>
+			<ul class="ui-whitespace" style="overflow:hidden;">
+				{loop $list $item}
+				<li style="margin:2px;float:left;" onclick="watchPic('{$item['img_url']}')">
+					<div>
+						<img src="{$item['img_url']}" style="width:60px;height:60px;border-radius:5px;">
+					</div>
+					<p class="ui-nowrap-multi" style="font-size:10px;width:60px;white-space:nowrap;color:white;">
+					<p>
+				</li>
+				{/loop}
+				</ul>
+			{/loop}
+			<script>
+			function watchPic(url) {
+				wx.previewImage({
+					current:url,
+					 urls: [
+					 <?php 
+					 // -- php
+					 $picurls = array();
+					 foreach($albumlist as $list)
+					 {
+					 	foreach($list as $item) 
+					 	{
+					 			$picurls[] = "'".$item['img_url']."'";
+					 	}
+					 }
+					 echo join(',',$picurls);
+					 ?>
+				      ]
+				})
+			}
+		</script>
+		</div>
+	</div>
+{template 'footer'}
